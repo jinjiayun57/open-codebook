@@ -1,64 +1,117 @@
 from __future__ import annotations
 
-import yaml
 import json
-import pandas as pd
 from datetime import datetime, UTC
 from pathlib import Path
 
-def load_codebook(codebook_path: Path) -> dict:
+import pandas as pd
+import yaml
+import ollama
+
+
+MODEL_NAME = "qwen3.5:4b"
+
+
+def load_codebook(codebook_path):
     with codebook_path.open("r", encoding="utf-8") as f:
         return yaml.safe_load(f)
 
-def load_data(data_path: Path) -> pd.DataFrame:
+
+def load_data(data_path):
     return pd.read_csv(data_path)
 
-def mock_code_text(text: str) -> dict:
-    """
-    Placeholder coding function for the early-stage prototype.
-    This will later be replaced by structured coding with an open/local model.
-    """
-    lowered = text.lower()
 
-    if "my home ground" in lowered or "prove myself" in lowered or "goal goes far beyond" in lowered:
-        explicit_position = "supportive"
-    elif "deeply affected" in lowered or "fight back" in lowered:
-        explicit_position = "critical"
-    elif "long road ahead" in lowered or "begin again" in lowered:
-        explicit_position = "mixed"
-    else:
-        explicit_position = "unclear"
+def llm_code_text(text):
+    prompt = f"""
+You are helping with structured coding of short social science text.
 
-    if "hope" in lowered or "depends" in lowered or "long road ahead" in lowered:
-        indirectness = "high"
-        ambiguity_flag = "yes"
-        human_review = "yes"
-    else:
-        indirectness = "medium"
-        ambiguity_flag = "no"
-        human_review = "no"
+Return only a valid JSON object with exactly these fields:
+- explicit_position
+- implied_position
+- indirectness
+- norm_conforming_language
+- ambiguity_flag
+- evidence_span
+- human_review
 
-    if "unity" in lowered or "strongly agree" in lowered:
-        norm_conforming_language = "yes"
-    else:
-        norm_conforming_language = "unclear"
+Allowed values:
+- explicit_position: supportive, critical, mixed, unclear
+- implied_position: supportive, critical, mixed, unclear
+- indirectness: low, medium, high
+- norm_conforming_language: yes, no, unclear
+- ambiguity_flag: yes, no
+- human_review: yes, no
 
-    return {
-        "explicit_position": explicit_position,
-        "implied_position": explicit_position,
-        "indirectness": indirectness,
-        "norm_conforming_language": norm_conforming_language,
-        "ambiguity_flag": ambiguity_flag,
-        "evidence_span": text[:80],
-        "human_review": human_review,
+Definitions:
+- explicit_position = the position explicitly expressed in the text
+- implied_position = the implied or underlying position, if inferable
+- indirectness = degree to which the response is indirect, hedged, or self-moderated
+- norm_conforming_language = whether the response appears shaped by socially normative or cautious phrasing
+- ambiguity_flag = whether the text is difficult to code confidently
+- evidence_span = a short text span copied from the input
+- human_review = whether manual review is recommended
+
+Text:
+{text}
+""".strip()
+
+    schema = {
+        "type": "object",
+        "properties": {
+            "explicit_position": {
+                "type": "string",
+                "enum": ["supportive", "critical", "mixed", "unclear"],
+            },
+            "implied_position": {
+                "type": "string",
+                "enum": ["supportive", "critical", "mixed", "unclear"],
+            },
+            "indirectness": {
+                "type": "string",
+                "enum": ["low", "medium", "high"],
+            },
+            "norm_conforming_language": {
+                "type": "string",
+                "enum": ["yes", "no", "unclear"],
+            },
+            "ambiguity_flag": {
+                "type": "string",
+                "enum": ["yes", "no"],
+            },
+            "evidence_span": {"type": "string"},
+            "human_review": {
+                "type": "string",
+                "enum": ["yes", "no"],
+            },
+        },
+        "required": [
+            "explicit_position",
+            "implied_position",
+            "indirectness",
+            "norm_conforming_language",
+            "ambiguity_flag",
+            "evidence_span",
+            "human_review",
+        ],
     }
 
+    response = ollama.chat(
+        model=MODEL_NAME,
+        messages=[{"role": "user", "content": prompt}],
+        format=schema,
+        think=False,
+        stream=False,
+        options={"temperature": 0},
+    )
 
-def ensure_output_dir(output_dir: Path) -> None:
+    content = response["message"]["content"]
+    return json.loads(content)
+
+def ensure_output_dir(output_dir):
     output_dir.mkdir(parents=True, exist_ok=True)
 
 
-def main() -> None:
+def main():
     project_root = Path(__file__).resolve().parents[2]
     data_path = project_root / "data" / "demo_responses.csv"
     codebook_path = project_root / "codebooks" / "demo_codebook.yaml"
@@ -74,7 +127,7 @@ def main() -> None:
     coded_rows = []
     for _, row in df.iterrows():
         text_value = str(row[text_column])
-        result = mock_code_text(text_value)
+        result = llm_code_text(text_value)
 
         coded_row = {
             "id": row["id"],
@@ -97,10 +150,11 @@ def main() -> None:
     metadata = {
         "project_name": codebook.get("project_name", "unknown"),
         "text_column": text_column,
-        "n_rows": len(df),
+        "n_rows": len(coded_df),
         "timestamp_utc": datetime.now(UTC).isoformat(),
-        "mode": "mock_coding",
-        "notes": "Early-stage demo workflow with placeholder rule-based coding.",
+        "mode": "ollama_structured_coding",
+        "model": MODEL_NAME,
+        "notes": "Early-stage demo workflow using a local Ollama model.",
     }
 
     with metadata_output_path.open("w", encoding="utf-8") as f:
