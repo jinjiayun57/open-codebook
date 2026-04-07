@@ -31,7 +31,7 @@ OpenCodebook is motivated by a simple question:
 
 ## Current status
 
-This repository contains the initial project structure, a draft coding schema, and a small demo dataset for early workflow development.
+OpenCodebook is an early-stage prototype for structured coding of social science and humanities text data. The current version supports local LLM-based coding through Ollama and produces structured outputs for researcher review.
 
 ## Possible use cases
 
