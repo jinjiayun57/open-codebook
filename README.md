@@ -1,6 +1,7 @@
 # OpenCodebook
 
-**OpenCodebook** is an open-source prototype for AI-assisted coding of social science and humanities (SSH) text data.
+**OpenCodebook** is an early-stage open-source prototype for AI-assisted, codebook-driven coding of social science and humanities (SSH) text data.
+
 It is designed for settings where coding is not purely classificatory, but interpretive: subjective, sensitive, indirect, or partly implicit text that requires researcher judgment. Rather than treating LLMs as tools that replace interpretation, the project explores how open and local models can support coding in a way that keeps uncertainty visible, invites researcher review, and makes analytic decisions more transparent and reproducible.
 
 ## Why this project?
@@ -32,6 +33,32 @@ OpenCodebook is motivated by a simple question:
 ## Current status
 
 OpenCodebook is an early-stage prototype for structured coding of social science and humanities text data. The current version supports local LLM-based coding through Ollama and produces structured outputs for researcher review.
+
+## Repository structure
+
+```text
+codebooks/            YAML codebooks used to define coding categories
+data/                 Demo SSH text data in CSV format
+notebooks/            Example notebook showing the demo workflow
+src/open_codebook/    Core Python modules for coding workflow
+```
+
+Current core modules include:
+
+- `schema.py`: data structures and output schema logic
+- `io_utils.py`: reading and writing codebooks, input text, and outputs
+- `coder.py`: coding logic and structured output generation
+- `run_demo.py`: minimal demo pipeline
+
+
+## Demo workflow
+
+The repository currently includes a small demo workflow based on:
+- `codebooks/demo_codebook.yaml`
+- `data/demo_responses.csv`
+- `notebooks/01_demo_workflow.ipynb`
+
+This demo illustrates how a researcher-defined codebook and a small text dataset can be connected in a modular Python workflow for structured coding and review.
 
 ## Possible use cases
 
