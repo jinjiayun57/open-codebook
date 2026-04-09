@@ -1,5 +1,6 @@
 project_name: demo_codebook
 text_column: text_en
+model_name: qwen3.5:4b
 
 codes:
   - name: explicit_position
