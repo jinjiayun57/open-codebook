@@ -1,0 +1,9 @@
+{
+  "project_name": "demo_codebook",
+  "text_column": "text_en",
+  "n_rows": 8,
+  "timestamp_utc": "2026-04-09T10:13:58.764958+00:00",
+  "mode": "ollama_structured_coding",
+  "model": "qwen3.5:4b",
+  "notes": "Early-stage demo workflow using a local Ollama model."
+}

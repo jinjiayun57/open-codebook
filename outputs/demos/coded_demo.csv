@@ -1,0 +1,9 @@
+id,source_language,text_original,text_en,source_context,event_year,explicit_position,implied_position,indirectness,norm_conforming_language,ambiguity_flag,evidence_span,human_review
+1,zh,这不是谁的主场，这是我的主场,This is not someone else's home ground. This is my home ground.,2024年福冈总决赛,2024,supportive,supportive,low,false,false,This is my home ground,false
+2,zh,更希望的是团结，团结一心一致对外,What matters to me even more is unity—-staying united and facing outward together.,央视面对面采访,2024,supportive,supportive,low,true,false,What matters to me even more is unity—staying united and facing outward together.,false
+3,zh,特别赞同，我……深受其害,I strongly agree. I have been deeply affected by it.,赛后采访回应“体育饭圈”问题,2026,supportive,supportive,low,false,false,I strongly agree. I have been deeply affected by it.,false
+4,zh,我希望后面还有更多的挑战，去等待着我和我们，希望能一次一次地证明自己,"I hope there will be more challenges ahead for me and for us, and that I can prove myself again and again.",人民日报在场采访,2025,mixed,supportive,high,true,false,"I hope there will be more challenges ahead for me and for us, and that I can prove myself again and again.",false
+5,zh,在大家质疑中国乒乓球男队的时候，自己也想为男队站出来出一口气,"When people were doubting the Chinese men's table tennis team, I also wanted to step up for the team and fight back.",2025年多哈世乒赛,2025,supportive,supportive,low,false,false,I also wanted to step up for the team and fight back,false
+6,zh,希望我们来日方长,I hope there is still a long road ahead for us.,2024年福冈总决赛,2024,unclear,supportive,high,true,false,I hope there is still a long road ahead for us.,false
+7,zh,目标远不止于此,My goal goes far beyond this.,2024年新加坡大满贯,2024,unclear,unclear,high,true,true,My goal goes far beyond this.,true
+8,zh,当拿到这个冠军的时候，也就是自己重新开始的时候,"When I won this title, it also felt like a moment to begin again.",2023年多哈男子总决赛,2023,unclear,supportive,high,true,false,"When I won this title, it also felt like a moment to begin again.",false

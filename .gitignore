@@ -5,3 +5,7 @@ __pycache__/
 outputs/**/*.csv
 outputs/**/*.json
 .env
+
+!outputs/demos/
+!outputs/demos/coded_demo.csv
+!outputs/demos/run_metadata.json
