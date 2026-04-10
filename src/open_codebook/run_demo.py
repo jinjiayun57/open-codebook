@@ -2,38 +2,24 @@ from __future__ import annotations
 
 import json
 from datetime import datetime, UTC
-from pathlib import Path
-import sys
 
 import pandas as pd
-import yaml
 
 
 from .coder import code_text
-
-
-def load_codebook(codebook_path):
-    with codebook_path.open("r", encoding="utf-8") as f:
-        return yaml.safe_load(f)
-
-
-def load_data(data_path):
-    return pd.read_csv(data_path)
-
-def ensure_output_dir(output_dir):
-    output_dir.mkdir(parents=True, exist_ok=True)
+from .io_utils import ensure_output_dir, get_project_root, load_codebook, load_csv
 
 
 def main():
-    project_root = Path(__file__).resolve().parents[2]
-    data_path = project_root / "data" / "demo_responses.csv"
-    codebook_path = project_root / "codebooks" / "demo_codebook.yaml"
-    output_dir = project_root / "outputs"
+    project_root = get_project_root()
+    data_path = project_root / "data" / "demos" / "demo_responses.csv"
+    codebook_path = project_root / "codebooks" / "demos" / "demo_codebook.yaml"
+    output_dir = project_root / "outputs" / "demos"
 
     ensure_output_dir(output_dir)
 
     codebook = load_codebook(codebook_path)
-    df = load_data(data_path)
+    df = load_csv(data_path)
 
     text_column = codebook.get("text_column", "text_en")
     model_name = codebook.get("model_name", "qwen3.5:4b")

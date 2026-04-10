@@ -1,10 +1,18 @@
 # OpenCodebook
 
-**OpenCodebook** is an early-stage open-source prototype for AI-assisted, codebook-driven coding of social science and humanities (SSH) text data.
+**OpenCodebook** is an early-stage open-source project for AI-assisted, codebook-driven coding of social science and humanities (SSH) text data.
 
-It is designed for settings where coding is not purely classificatory, but interpretive: subjective, sensitive, indirect, or partly implicit text that requires researcher judgment. Rather than treating LLMs as tools that replace interpretation, the project explores how open and local models can support coding in a way that keeps uncertainty visible, invites researcher review, and makes analytic decisions more transparent and reproducible.
+It is designed for settings where coding is not purely classificatory, but interpretive: subjective, sensitive, indirect, or partly implicit text that requires researcher judgment. Rather than treating LLMs as tools that replace interpretation, the project explores how open and local models can support coding in ways that keep uncertainty visible, invite researcher review, and make analytic decisions more transparent and reproducible.
 
-At this stage, the repository is best understood as a compact end-to-end demo: a small codebook, a small CSV dataset, and a Python script that sends each text item to a local Ollama model and saves structured outputs for researcher review.
+The repository now has two connected layers:
+
+- **OpenCodebook** as the core workflow engine
+- **research studies** built on top of that engine
+
+At this stage, the repo includes:
+
+- a compact end-to-end demo
+- a first research pilot on stance, ambiguity, and interpretive coding using GLES open-ended responses
 
 ## Why this project?
 
@@ -21,45 +29,92 @@ OpenCodebook is motivated by a simple question:
 - **Researcher-defined codebooks**
 - **Structured outputs**
 - **Uncertainty flags and evidence spans**
-- **Researcher review loop**
-- **Reproducible prompts, model settings, and audit trails**
+- **Researcher review loops**
+- **Reproducible prompts, settings, and audit trails**
 
 ## Workflow
 
 1. Load a researcher-defined codebook
 2. Read short SSH text data from a CSV file
-3. Build the structured output schema from the codebook
+3. Build a structured output schema from the codebook
 4. Generate structured coding outputs with a local Ollama model
 5. Save coded results together with run-level metadata
 
 ## Current status
 
-OpenCodebook is an early-stage prototype for structured coding of social science and humanities text data. The current version supports local LLM-based coding through Ollama and produces structured outputs for researcher review.
+OpenCodebook is still intentionally small in scope. The current version supports local LLM-based coding through Ollama and produces structured outputs for researcher review.
 
-The current demo is intentionally small in scope. It is run as a Python module from the project root.
+The repository is now organized so that the engine, a runnable demo, and study-specific materials can coexist cleanly in one place.
 
 ## Repository structure
 
 ```text
-codebooks/            YAML codebooks used to define coding categories
-data/                 Demo SSH text data in CSV format
-notebooks/            Example notebook showing the demo workflow
+codebooks/
+  demos/              Demo codebooks
+  stance_ambiguity/   Study-specific codebooks
+data/
+  demos/              Demo input data
+  stance_ambiguity/   Study-specific raw and interim data
+notebooks/
+  demos/              Demo notebooks
+  stance_ambiguity/   Study notebooks
+outputs/
+  demos/              Demo outputs
+  stance_ambiguity/   Study outputs
+studies/              High-level study notes and research framing
 src/open_codebook/    Core Python modules for coding workflow
 ```
 
 Current core modules include:
 
 - `schema.py`: data structures and output schema logic
-- `io_utils.py`: reading and writing codebooks, input text, and outputs
+- `io_utils.py`: shared path helpers and file utilities
 - `coder.py`: coding logic and structured output generation
 - `run_demo.py`: minimal demo pipeline
+- `reliability.py`: placeholder module for agreement and disagreement analysis
+- `run_study.py`: placeholder study runner for future non-demo workflows
 
+## Engine, demo, and study
+
+### OpenCodebook as engine
+
+The engine lives in `src/open_codebook/` and remains the core of the repository. It is responsible for:
+
+- loading codebooks and text data
+- building structured output schemas
+- calling a local model through Ollama
+- writing row-level outputs and run metadata
+
+### Demo workflow
+
+The demo remains the smallest runnable example in the repository. Its assets now live under:
+
+- `codebooks/demos/demo_codebook.yaml`
+- `data/demos/demo_responses.csv`
+- `notebooks/demos/01_demo_workflow.ipynb`
+
+Running the demo writes:
+
+- `outputs/demos/coded_demo.csv`
+- `outputs/demos/run_metadata.json`
+
+### First research study: stance and ambiguity pilot
+
+The first serious study inside this repository is a GLES-based pilot on stance, ambiguity, and interpretive coding of open-ended responses.
+
+Study materials live under:
+
+- `codebooks/stance_ambiguity/`
+- `data/stance_ambiguity/`
+- `notebooks/stance_ambiguity/`
+- `outputs/stance_ambiguity/`
+- `studies/stance_ambiguity_pilot/`
 
 ## Demo workflow
 
 The repository currently includes a small demo workflow based on:
-- `codebooks/demo_codebook.yaml`
-- `data/demo_responses.csv`
+- `codebooks/demos/demo_codebook.yaml`
+- `data/demos/demo_responses.csv`
 
 This demo illustrates how a researcher-defined codebook and a small text dataset can be connected in a modular Python workflow, where output field definitions are derived from the YAML codebook and used for structured coding and review.
 
@@ -79,22 +134,34 @@ This repository uses a `src/` layout, so the demo is run as a module rather than
 
 If the run succeeds, it writes:
 
-- `outputs/coded_demo.csv`
-- `outputs/run_metadata.json`
+- `outputs/demos/coded_demo.csv`
+- `outputs/demos/run_metadata.json`
 
 ## What the demo currently does
 
-- Loads `codebooks/demo_codebook.yaml`
-- Reads `data/demo_responses.csv`
+- Loads `codebooks/demos/demo_codebook.yaml`
+- Reads `data/demos/demo_responses.csv`
 - Uses `text_en` as the input text column
 - Sends each row to a local Ollama model for structured coding
 - Saves row-level coding results and run-level metadata
 
+## Stance and ambiguity pilot
+
+The stance and ambiguity pilot is not yet a full runnable study. At this stage, the repository includes:
+
+- a dedicated study folder under `studies/stance_ambiguity_pilot/`
+- a study-specific codebook draft under `codebooks/stance_ambiguity/`
+- placeholder notebook locations for data inspection, sampling, and reliability work
+- a future workflow stub in `src/open_codebook/run_study.py`
+
+The raw GLES source files are present under `data/stance_ambiguity/raw/`. The study remains early-stage, and the derived interim sample plus analysis outputs still need to be created.
+
 ## Current limitations
 
 - The current demo depends on a local Ollama setup and will not run unless Ollama is installed and active.
-- The coding schema is now derived from the YAML codebook, but the demo remains a small prototype rather than a fully configurable research tool.
-- The repository is an early prototype intended to demonstrate workflow direction rather than a fully packaged research tool.
+- The coding schema is now derived from the YAML codebook, but the repo remains an early prototype rather than a fully configurable research tool.
+- The stance and ambiguity pilot is still at the scaffolding stage and does not yet include the derived interim sample or finished reliability analysis.
+- The repository is intended to demonstrate workflow direction and study organization rather than a finished research platform.
 
 ## Possible use cases
 

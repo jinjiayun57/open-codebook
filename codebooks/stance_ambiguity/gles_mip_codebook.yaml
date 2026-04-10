@@ -1,0 +1,38 @@
+project_name: gles_stance_ambiguity_pilot
+text_column: response_text
+model_name: qwen3.5:4b
+prompt_preamble: >
+  You are helping with structured coding of open-ended political survey responses.
+  Use the code definitions exactly as given, and keep ambiguity visible rather than forcing certainty.
+codes:
+  - name: stance_direction
+    description: >
+      Overall stance direction toward the identified target in the response.
+    values:
+      - support
+      - oppose
+      - mixed
+      - unclear
+      - no_stance
+  - name: stance_explicitness
+    description: >
+      Whether the response expresses stance directly or only indirectly.
+    values:
+      - explicit
+      - implicit
+      - indirect
+      - highly_indirect
+  - name: ambiguity_level
+    description: >
+      Degree to which the response remains ambiguous after reading the text itself.
+    values:
+      - low
+      - medium
+      - high
+  - name: coder_confidence
+    description: >
+      Confidence in assigning the codes based on the available text alone.
+    values:
+      - high
+      - medium
+      - low
