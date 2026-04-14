@@ -1,0 +1,195 @@
+codebook_name: gles_mip_v1
+version: "1.0"
+description: "Codebook for coding open-ended 'most important problem' responses from GLES 2025"
+language: de
+source_dataset: "GLES Rolling Cross-Section 2025 (ZA10101, v3.0.0)"
+source_question: "In your opinion, what is the most important problem facing Germany today?"
+coding_principle: "issue_domain is always the primary substantive label. The other dimensions describe how that domain is expressed."
+text_column: response_text
+model_name: qwen3.5:4b
+
+codes:
+  - name: issue_domain
+    description: Primary substantive issue domain mentioned in the response.
+    required: true
+    multi_label: false
+    values:
+      - economy
+      - migration
+      - social_welfare
+      - security
+      - climate_environment
+      - education
+      - democracy_governance
+      - foreign_policy_war
+      - other
+      - unclear
+    categories:
+      - value: economy
+        definition: Economic conditions, labor, taxation, inflation, or cost of living.
+        examples:
+          - Wirtschaft
+          - Konjunktur
+          - Arbeitsmarkt
+          - Steuern
+          - Inflation
+          - Lebenshaltungskosten
+      - value: migration
+        definition: Migration, immigration, asylum, refugees, or related integration issues.
+        examples:
+          - Migration
+          - Zuwanderung
+          - Einwanderung
+          - Asylpolitik
+          - Flüchtlinge
+      - value: social_welfare
+        definition: Welfare state, pensions, care, health care, or social justice.
+        examples:
+          - Rente
+          - Sozialstaat
+          - Pflege
+          - Gesundheitswesen
+          - soziale Gerechtigkeit
+      - value: security
+        definition: Internal security, crime, defense, or public safety.
+        examples:
+          - Innere Sicherheit
+          - Kriminalität
+          - Verteidigung
+      - value: climate_environment
+        definition: Climate change, environmental protection, or energy transition.
+        examples:
+          - Klimawandel
+          - Umwelt
+          - Energiewende
+      - value: education
+        definition: Education, schools, childcare, or related learning institutions.
+        examples:
+          - Bildung
+          - Schulsystem
+          - Kinderbetreuung
+      - value: democracy_governance
+        definition: Democracy, bureaucracy, parties, institutions, or the political system.
+        examples:
+          - Demokratie
+          - Bürokratie
+          - Parteien
+          - politisches System
+      - value: foreign_policy_war
+        definition: Foreign policy, international conflict, war, or foreign political actors.
+        examples:
+          - Ukraine
+          - Russland
+          - Außenpolitik
+          - Trump
+      - value: other
+        definition: A substantive political issue that does not fit the listed domains.
+        examples: []
+      - value: unclear
+        definition: The issue domain cannot be determined from the response.
+        examples: []
+
+  - name: specificity
+    description: Degree and type of specificity in how the issue is expressed.
+    required: true
+    multi_label: false
+    values:
+      - label_only
+      - named_policy
+      - framed_claim
+      - actor_reference
+    levels:
+      - value: label_only
+        definition: Response is a single topic word or short generic label.
+        examples:
+          - "Migration"
+          - "Wirtschaft"
+      - value: named_policy
+        definition: Response names a specific policy area or institutional domain.
+        examples:
+          - "Asylpolitik"
+          - "Energiewende"
+      - value: framed_claim
+        definition: Response makes a concrete evaluative claim or complaint.
+        examples:
+          - "unbezahlbare Mieten"
+          - "zu viel kriminelle Ausländer"
+      - value: actor_reference
+        definition: Response achieves specificity mainly by naming an actor, party, or group.
+        examples:
+          - "Die AFD muss abgeschafft werden"
+          - "Donald Trump"
+
+  - name: framing
+    description: How the response frames the named issue.
+    required: true
+    multi_label: false
+    values:
+      - descriptive
+      - evaluative
+      - directive
+    levels:
+      - value: descriptive
+        definition: Neutral issue mention without evaluative direction.
+        examples:
+          - "Wirtschaft"
+          - "Klimawandel"
+      - value: evaluative
+        definition: Implies something is wrong, failing, or needs to change.
+        examples:
+          - "Wirtschaftskrise"
+          - "unbezahlbare Mieten"
+      - value: directive
+        definition: Demands action, assigns blame, or names a responsible actor.
+        examples:
+          - "Ausländer abschieben"
+          - "nur Versager in den Ämtern"
+
+  - name: ambiguity
+    description: How much interpretation is required to code this response on the other dimensions.
+    required: true
+    multi_label: false
+    values:
+      - low
+      - medium
+      - high
+    levels:
+      - value: low
+        definition: Coding is straightforward, most coders would agree.
+        examples:
+          - "Inflation"
+      - value: medium
+        definition: Some interpretation needed, reasonable coders might disagree on one dimension.
+        examples:
+          - "Belange der deutschen Bevölkerung"
+      - value: high
+        definition: Substantial interpretation needed, multiple dimensions are uncertain.
+        examples:
+          - "Einigkeit"
+          - "X"
+
+  - name: multi_issue
+    description: Whether the response mentions more than one distinct political issue.
+    required: true
+    multi_label: false
+    type: boolean
+    values:
+      - true
+      - false
+    examples:
+      true:
+        - "Ausländer, Löhne in Behinderten Werkstätten müssen steigen, mehr Geld für die Rentner"
+      false:
+        - "Migration"
+
+derived_codes:
+  - name: review_flag
+    description: Computed after coding, not assigned by the coder.
+    coded_by_model: false
+    type: boolean
+    values:
+      - true
+      - false
+    set_to_true_if:
+      - ambiguity == "high"
+      - multi_issue == true
