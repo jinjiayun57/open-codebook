@@ -1,0 +1,401 @@
+sample_id,lfdn,lfdn_key,source_var,response_text_raw,response_text,n_words,n_chars,stratum,response_freq,sample_seed,pre001,ostwest,sup057
+gles_mip_v1_0001,9122,9122,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,female,West Germany,7
+gles_mip_v1_0002,8513,8513,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,male,West Germany,6
+gles_mip_v1_0003,3755,3755,pre020s,Migration,Migration,1,9,single_word,1128,2025,male,West Germany,4
+gles_mip_v1_0004,6368,6368,pre020s,Asylpolitik,Asylpolitik,1,11,single_word,143,2025,male,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0005,92,92,pre020s,migranten,migranten,1,9,single_word,44,2025,male,West Germany,9
+gles_mip_v1_0006,1010,1010,pre020s,Inflation,Inflation,1,9,single_word,136,2025,female,East Germany,3
+gles_mip_v1_0007,2906,2906,pre020s,Sozial Politik,Sozial Politik,2,14,short_phrase,1,2025,female,West Germany,8
+gles_mip_v1_0008,6869,6869,pre020s,Wirtschaftliche Situation,Wirtschaftliche Situation,2,25,short_phrase,22,2025,male,West Germany,8
+gles_mip_v1_0009,5760,5760,pre020s,Migration,Migration,1,9,single_word,1128,2025,male,West Germany,9
+gles_mip_v1_0010,1754,1754,pre020s,Chronische Unzufriedenheit,Chronische Unzufriedenheit,2,26,short_phrase,1,2025,female,West Germany,5
+gles_mip_v1_0011,6372,6372,pre020s,Immigration und Rente,Immigration und Rente,3,21,short_phrase,1,2025,male,East Germany,Not ratable
+gles_mip_v1_0012,4175,4175,pre020s,"AfD-Wahlen, weil die Wähler die anderen Parteien schlecht finden","AfD-Wahlen, weil die Wähler die anderen Parteien schlecht finden",10,64,elaborated,1,2025,female,West Germany,3
+gles_mip_v1_0013,2513,2513,pre020s,Wirtschaftliche Lage,Wirtschaftliche Lage,2,20,short_phrase,99,2025,male,West Germany,4
+gles_mip_v1_0014,1186,1186,pre020s,"Armut ,Alles wird immer teurer","Armut ,Alles wird immer teurer",5,30,elaborated,1,2025,female,West Germany,Break-off
+gles_mip_v1_0015,6670,6670,pre020s,Asylrecht,Asylrecht,1,9,single_word,17,2025,male,West Germany,7
+gles_mip_v1_0016,8738,8738,pre020s,Migration,Migration,1,9,single_word,1128,2025,female,West Germany,5
+gles_mip_v1_0017,816,816,pre020s,Unzufriedenheit allgemein,Unzufriedenheit allgemein,2,25,short_phrase,1,2025,male,West Germany,6
+gles_mip_v1_0018,1628,1628,pre020s,Migration,Migration,1,9,single_word,1128,2025,female,East Germany,6
+gles_mip_v1_0019,6221,6221,pre020s,Moderate Miete Wohnungsbau,Moderate Miete Wohnungsbau,3,26,short_phrase,1,2025,male,East Germany,1 left
+gles_mip_v1_0020,972,972,pre020s,Einwanderung,Einwanderung,1,12,single_word,80,2025,female,East Germany,8
+gles_mip_v1_0021,1915,1915,pre020s,Das Problem das die AfD wieder mehr an macht kommt und eine erneute nazi Zeit erwartet wird,Das Problem das die AfD wieder mehr an macht kommt und eine erneute nazi Zeit erwartet wird,17,91,elaborated,1,2025,male,West Germany,3
+gles_mip_v1_0022,3422,3422,pre020s,Viel zu hohe Preise für alles.,Viel zu hohe Preise für alles.,6,30,elaborated,1,2025,male,West Germany,Not ratable
+gles_mip_v1_0023,285,285,pre020s,Zusammensetzung der künftigen Regierung,Zusammensetzung der künftigen Regierung,4,39,short_phrase,1,2025,male,West Germany,8
+gles_mip_v1_0024,111,111,pre020s,Unzufriedene Menschen,Unzufriedene Menschen,2,21,short_phrase,1,2025,female,West Germany,5
+gles_mip_v1_0025,4058,4058,pre020s,zuviel Ausgaben ins Ausland (Rüstung und Asylanten),zuviel Ausgaben ins Ausland (Rüstung und Asylanten),7,51,elaborated,1,2025,female,West Germany,6
+gles_mip_v1_0026,6754,6754,pre020s,wirtschaftliche Lage,wirtschaftliche Lage,2,20,short_phrase,99,2025,male,West Germany,9
+gles_mip_v1_0027,3832,3832,pre020s,die Politik selbst,die Politik selbst,3,18,short_phrase,3,2025,male,West Germany,6
+gles_mip_v1_0028,2529,2529,pre020s,Es gibt zu wenig Konsequenzen,Es gibt zu wenig Konsequenzen,5,29,elaborated,1,2025,female,West Germany,Not ratable
+gles_mip_v1_0029,7562,7562,pre020s,Asylanten,Asylanten,1,9,single_word,52,2025,female,West Germany,6
+gles_mip_v1_0030,205,205,pre020s,Ausländer zu viele,Ausländer zu viele,3,18,short_phrase,1,2025,male,West Germany,2
+gles_mip_v1_0031,4648,4648,pre020s,Die Parteien,Die Parteien,2,12,short_phrase,1,2025,male,West Germany,3
+gles_mip_v1_0032,5902,5902,pre020s,Aufnahme von Flüchtlingen die kriminell waren oder ihren pass weggeschmissen haben,Aufnahme von Flüchtlingen die kriminell waren oder ihren pass weggeschmissen haben,11,82,elaborated,1,2025,female,West Germany,Break-off
+gles_mip_v1_0033,8301,8301,pre020s,Migration in den griff zu bekommen,Migration in den griff zu bekommen,6,34,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0034,8030,8030,pre020s,Wirtschaftliche Situation,Wirtschaftliche Situation,2,25,short_phrase,22,2025,male,West Germany,4
+gles_mip_v1_0035,2165,2165,pre020s,Inflation,Inflation,1,9,single_word,136,2025,male,West Germany,4
+gles_mip_v1_0036,2636,2636,pre020s,offene Grenzen,offene Grenzen,2,14,short_phrase,2,2025,male,East Germany,9
+gles_mip_v1_0037,6156,6156,pre020s,migration,migration,1,9,single_word,1128,2025,male,West Germany,9
+gles_mip_v1_0038,4370,4370,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,female,West Germany,2
+gles_mip_v1_0039,1311,1311,pre020s,"Rente, Mindestlohn, Wirtschaft und Grenzkontrollen","Rente, Mindestlohn, Wirtschaft und Grenzkontrollen",5,50,elaborated,1,2025,male,West Germany,4
+gles_mip_v1_0040,8669,8669,pre020s,Zu viele Einwanderer die finanziert werden,Zu viele Einwanderer die finanziert werden,6,42,elaborated,1,2025,female,West Germany,8
+gles_mip_v1_0041,7886,7886,pre020s,"Die Parteinekartelle, die  ihre Demokratie  verteidigen wollen","Die Parteinekartelle, die ihre Demokratie verteidigen wollen",7,60,elaborated,1,2025,male,West Germany,7
+gles_mip_v1_0042,7726,7726,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,female,East Germany,Not ratable
+gles_mip_v1_0043,7063,7063,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,female,West Germany,6
+gles_mip_v1_0044,2503,2503,pre020s,Migration,Migration,1,9,single_word,1128,2025,male,West Germany,9
+gles_mip_v1_0045,7792,7792,pre020s,Keine Einigung bei den Problem,Keine Einigung bei den Problem,5,30,elaborated,1,2025,female,West Germany,6
+gles_mip_v1_0046,2439,2439,pre020s,Die fehlende Bereitschaft der Parteien gemeinsam nach Lösungen in den wichtigen Sachthemen zusammen zuarbeiten.,Die fehlende Bereitschaft der Parteien gemeinsam nach Lösungen in den wichtigen Sachthemen zusammen zuarbeiten.,14,111,elaborated,1,2025,female,West Germany,6
+gles_mip_v1_0047,2814,2814,pre020s,das rechte Parteien an die Macht gelangen,das rechte Parteien an die Macht gelangen,7,41,elaborated,1,2025,female,West Germany,4
+gles_mip_v1_0048,3739,3739,pre020s,Zu viele Ausländer im Land die sich nicht anpassen wollen,Zu viele Ausländer im Land die sich nicht anpassen wollen,10,57,elaborated,1,2025,female,West Germany,5
+gles_mip_v1_0049,1083,1083,pre020s,Migration,Migration,1,9,single_word,1128,2025,male,West Germany,8
+gles_mip_v1_0050,5742,5742,pre020s,Klimawandel,Klimawandel,1,11,single_word,89,2025,male,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0051,2371,2371,pre020s,Inflation,Inflation,1,9,single_word,136,2025,female,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0052,6440,6440,pre020s,"Migration, wirtschaftliche Lage","Migration, wirtschaftliche Lage",3,31,short_phrase,1,2025,male,West Germany,8
+gles_mip_v1_0053,6060,6060,pre020s,Keine Partei hat die absolute Mehrheit,Keine Partei hat die absolute Mehrheit,6,38,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0054,7362,7362,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,female,West Germany,3
+gles_mip_v1_0055,5986,5986,pre020s,zuviele kriminelle ausländer die nicht abgeschoben werden,zuviele kriminelle ausländer die nicht abgeschoben werden,7,57,elaborated,1,2025,male,West Germany,8
+gles_mip_v1_0056,6122,6122,pre020s,Energie,Energie,1,7,single_word,29,2025,male,West Germany,8
+gles_mip_v1_0057,216,216,pre020s,armut,armut,1,5,single_word,33,2025,female,East Germany,3
+gles_mip_v1_0058,1716,1716,pre020s,Laute Forderungen werden über den Konsens/das langfristige Wohl Deutschlands gestellt,Laute Forderungen werden über den Konsens/das langfristige Wohl Deutschlands gestellt,11,85,elaborated,1,2025,female,West Germany,5
+gles_mip_v1_0059,6638,6638,pre020s,Asolanten,Asolanten,1,9,single_word,1,2025,female,West Germany,6
+gles_mip_v1_0060,2678,2678,pre020s,"Zu viele Flüchtlinge, wird nichts für armen Menschen gemacht und zu wenig Geld geben einen","Zu viele Flüchtlinge, wird nichts für armen Menschen gemacht und zu wenig Geld geben einen",15,90,elaborated,1,2025,female,West Germany,Not ratable
+gles_mip_v1_0061,5316,5316,pre020s,Die Schaffung eines einheitlichen Kurses,Die Schaffung eines einheitlichen Kurses,5,40,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0062,5987,5987,pre020s,Jeder ist sich selbst der nächste,Jeder ist sich selbst der nächste,6,33,elaborated,1,2025,male,East Germany,5
+gles_mip_v1_0063,2786,2786,pre020s,Aufnahme von Flüchtlingen,Aufnahme von Flüchtlingen,3,25,short_phrase,1,2025,female,West Germany,5
+gles_mip_v1_0064,293,293,pre020s,Inflation,Inflation,1,9,single_word,136,2025,male,East Germany,6
+gles_mip_v1_0065,7958,7958,pre020s,es fließt zuviel Geld ins Ausland,es fließt zuviel Geld ins Ausland,6,33,elaborated,1,2025,female,West Germany,1 left
+gles_mip_v1_0066,4885,4885,pre020s,Wirtschaft muss wieder in Gang kommen,Wirtschaft muss wieder in Gang kommen,6,37,elaborated,1,2025,female,West Germany,6
+gles_mip_v1_0067,8585,8585,pre020s,Migration,Migration,1,9,single_word,1128,2025,female,East Germany,5
+gles_mip_v1_0068,2433,2433,pre020s,Rechtsextremismus,Rechtsextremismus,1,17,single_word,26,2025,female,West Germany,3
+gles_mip_v1_0069,1694,1694,pre020s,Ausländer,Ausländer,1,9,single_word,111,2025,female,East Germany,Not ratable
+gles_mip_v1_0070,7869,7869,pre020s,Uneinigkeit,Uneinigkeit,1,11,single_word,34,2025,female,West Germany,7
+gles_mip_v1_0071,1497,1497,pre020s,Soziale ungerechtigkeit,Soziale ungerechtigkeit,2,23,short_phrase,27,2025,female,West Germany,6
+gles_mip_v1_0072,6711,6711,pre020s,Probleme werden nicht angepackt sondern nur auf Fehler der anderen hingewiesen,Probleme werden nicht angepackt sondern nur auf Fehler der anderen hingewiesen,11,78,elaborated,1,2025,male,West Germany,7
+gles_mip_v1_0073,8095,8095,pre020s,rentensicherung,rentensicherung,1,15,single_word,2,2025,male,West Germany,11 right
+gles_mip_v1_0074,1824,1824,pre020s,Umterstützung Ukraine,Umterstützung Ukraine,2,21,short_phrase,1,2025,female,West Germany,2
+gles_mip_v1_0075,6010,6010,pre020s,Energiepreise,Energiepreise,1,13,single_word,15,2025,male,West Germany,6
+gles_mip_v1_0076,4376,4376,pre020s,Das die sich nicht einig sind,Das die sich nicht einig sind,6,29,elaborated,1,2025,female,West Germany,Not ratable
+gles_mip_v1_0077,7065,7065,pre020s,Instabilität der Sozialversicherungen,Instabilität der Sozialversicherungen,3,37,short_phrase,1,2025,male,West Germany,3
+gles_mip_v1_0078,4100,4100,pre020s,"Abschiebungen von Straftätern, Auffälligen und Menschen ohne Aufenthaltesgenehmigung sollte im Ruckzuckverfahren gehen","Abschiebungen von Straftätern, Auffälligen und Menschen ohne Aufenthaltesgenehmigung sollte im Ruckzuckverfahren gehen",12,118,elaborated,1,2025,female,West Germany,6
+gles_mip_v1_0079,4872,4872,pre020s,Flüchtlingspolitik bzw. Ausweisung krimineller Ausländer,Flüchtlingspolitik bzw. Ausweisung krimineller Ausländer,5,56,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0080,3911,3911,pre020s,Finanzen,Finanzen,1,8,single_word,25,2025,female,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0081,6678,6678,pre020s,"Zu viele Asylanten, die ausreisepflichtig sind","Zu viele Asylanten, die ausreisepflichtig sind",6,46,elaborated,1,2025,female,West Germany,8
+gles_mip_v1_0082,7072,7072,pre020s,Die Renten sind zu gering,Die Renten sind zu gering,5,25,elaborated,1,2025,female,East Germany,6
+gles_mip_v1_0083,662,662,pre020s,Afd (Rassismus),Afd (Rassismus),2,15,short_phrase,1,2025,female,West Germany,1 left
+gles_mip_v1_0084,3177,3177,pre020s,Keine Führungsstärke,Keine Führungsstärke,2,20,short_phrase,1,2025,female,East Germany,6
+gles_mip_v1_0085,8811,8811,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,male,West Germany,8
+gles_mip_v1_0086,4833,4833,pre020s,die allgemeine Untätigkeit der Politik und Regierung,die allgemeine Untätigkeit der Politik und Regierung,7,52,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0087,3366,3366,pre020s,Kindisches Verhalten,Kindisches Verhalten,2,20,short_phrase,1,2025,male,West Germany,5
+gles_mip_v1_0088,2985,2985,pre020s,"Asylanten, die hier Geld kassieren, aber nicht arbeiten wollen","Asylanten, die hier Geld kassieren, aber nicht arbeiten wollen",9,62,elaborated,1,2025,female,West Germany,6
+gles_mip_v1_0089,750,750,pre020s,Wird nicht an Deutschland gedacht,Wird nicht an Deutschland gedacht,5,33,elaborated,1,2025,female,West Germany,8
+gles_mip_v1_0090,2650,2650,pre020s,Frieden,Frieden,1,7,single_word,31,2025,male,West Germany,6
+gles_mip_v1_0091,1779,1779,pre020s,ungeregelte zuanderung,ungeregelte zuanderung,2,22,short_phrase,1,2025,male,West Germany,7
+gles_mip_v1_0092,7376,7376,pre020s,Zuwanderung,Zuwanderung,1,11,single_word,113,2025,female,West Germany,5
+gles_mip_v1_0093,6808,6808,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,male,West Germany,5
+gles_mip_v1_0094,8628,8628,pre020s,Gesellschaftliche Spaltung,Gesellschaftliche Spaltung,2,26,short_phrase,9,2025,male,West Germany,4
+gles_mip_v1_0095,783,783,pre020s,Zahlungen an Fremde Länder,Zahlungen an Fremde Länder,4,26,short_phrase,1,2025,female,West Germany,5
+gles_mip_v1_0096,8212,8212,pre020s,Die Zusammenarbeit der Parteien ist stark eingebrochen,Die Zusammenarbeit der Parteien ist stark eingebrochen,7,54,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0097,4449,4449,pre020s,Zuviel Sozialleistungen,Zuviel Sozialleistungen,2,23,short_phrase,1,2025,male,West Germany,8
+gles_mip_v1_0098,1691,1691,pre020s,Bürgergeld,Bürgergeld,1,10,single_word,13,2025,male,West Germany,9
+gles_mip_v1_0099,4562,4562,pre020s,Angst im eigenen Land,Angst im eigenen Land,4,21,short_phrase,1,2025,female,West Germany,5
+gles_mip_v1_0100,3167,3167,pre020s,die schlechtesten Parteien dieser Welt regieren das Land!,die schlechtesten Parteien dieser Welt regieren das Land!,8,57,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0101,1952,1952,pre020s,klima,klima,1,5,single_word,30,2025,female,West Germany,4
+gles_mip_v1_0102,3941,3941,pre020s,Es wird keine Politik für die eigenen Bürger gemacht.,Es wird keine Politik für die eigenen Bürger gemacht.,9,53,elaborated,1,2025,male,West Germany,4
+gles_mip_v1_0103,2496,2496,pre020s,Wirtschaftliche Lage,Wirtschaftliche Lage,2,20,short_phrase,99,2025,male,West Germany,3
+gles_mip_v1_0104,8766,8766,pre020s,Steigende Kosten,Steigende Kosten,2,16,short_phrase,2,2025,female,East Germany,Not ratable
+gles_mip_v1_0105,1118,1118,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,female,West Germany,6
+gles_mip_v1_0106,2207,2207,pre020s,Dass an den falschen Ecken gespart wird u.a. An der Polizei und Infrastruktur,Dass an den falschen Ecken gespart wird u.a. An der Polizei und Infrastruktur,14,77,elaborated,1,2025,male,West Germany,5
+gles_mip_v1_0107,4268,4268,pre020s,schlechte Wirtschaftslage,schlechte Wirtschaftslage,2,25,short_phrase,11,2025,female,West Germany,7
+gles_mip_v1_0108,2526,2526,pre020s,Ukraine Krieg beenden,Ukraine Krieg beenden,3,21,short_phrase,1,2025,male,East Germany,11 right
+gles_mip_v1_0109,8205,8205,pre020s,Tendenz zur AFD in der  Bevölkerung,Tendenz zur AFD in der Bevölkerung,6,34,elaborated,1,2025,female,East Germany,3
+gles_mip_v1_0110,1231,1231,pre020s,Migration und die daraus resultierenden Probleme in allen Bereichen,Migration und die daraus resultierenden Probleme in allen Bereichen,9,67,elaborated,1,2025,female,West Germany,7
+gles_mip_v1_0111,2425,2425,pre020s,Ehrlichkeit der Politiker zu den Menschen,Ehrlichkeit der Politiker zu den Menschen,6,41,elaborated,1,2025,male,East Germany,5
+gles_mip_v1_0112,3905,3905,pre020s,Die Migration richtig lenken und die Einwanderer in Arbeit bringen,Die Migration richtig lenken und die Einwanderer in Arbeit bringen,10,66,elaborated,1,2025,male,East Germany,4
+gles_mip_v1_0113,2440,2440,pre020s,unfähiger Bundeskanzler,unfähiger Bundeskanzler,2,23,short_phrase,1,2025,male,West Germany,7
+gles_mip_v1_0114,8540,8540,pre020s,das es dem eigenen volk besser geht,das es dem eigenen volk besser geht,7,35,elaborated,1,2025,female,West Germany,Not ratable
+gles_mip_v1_0115,7832,7832,pre020s,Energikosten Sicherheit Frieden und Wirtschaft,Energikosten Sicherheit Frieden und Wirtschaft,5,46,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0116,7212,7212,pre020s,Klimaneutraler Wirtschaftsumbau,Klimaneutraler Wirtschaftsumbau,2,31,short_phrase,1,2025,female,West Germany,5
+gles_mip_v1_0117,992,992,pre020s,Migration,Migration,1,9,single_word,1128,2025,female,West Germany,4
+gles_mip_v1_0118,1354,1354,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,male,West Germany,2
+gles_mip_v1_0119,8493,8493,pre020s,Krankenhausreform--------,Krankenhausreform--------,1,25,single_word,1,2025,female,East Germany,2
+gles_mip_v1_0120,3446,3446,pre020s,Aufnahme von zu vielen Flüchtlingen,Aufnahme von zu vielen Flüchtlingen,5,35,elaborated,1,2025,female,West Germany,6
+gles_mip_v1_0121,1687,1687,pre020s,Die Gesundheit der Firmen und der Wirtschaft.,Die Gesundheit der Firmen und der Wirtschaft.,7,45,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0122,3216,3216,pre020s,Diskriminierung von deutschen,Diskriminierung von deutschen,3,29,short_phrase,1,2025,male,West Germany,6
+gles_mip_v1_0123,2349,2349,pre020s,Das sich Arbeit nicht nicht mehr für jeden finanziell lohnt,Das sich Arbeit nicht nicht mehr für jeden finanziell lohnt,10,59,elaborated,1,2025,male,East Germany,5
+gles_mip_v1_0124,127,127,pre020s,Energie,Energie,1,7,single_word,29,2025,male,East Germany,7
+gles_mip_v1_0125,5680,5680,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,female,West Germany,1 left
+gles_mip_v1_0126,7418,7418,pre020s,Niedrige Steuern für Reiche,Niedrige Steuern für Reiche,4,27,short_phrase,1,2025,male,West Germany,1 left
+gles_mip_v1_0127,3821,3821,pre020s,Digitaler Wandel wird nicht genug beachtet,Digitaler Wandel wird nicht genug beachtet,6,42,elaborated,1,2025,female,West Germany,5
+gles_mip_v1_0128,8705,8705,pre020s,Das die AfD nicht gewinnt,Das die AfD nicht gewinnt,5,25,elaborated,1,2025,female,West Germany,6
+gles_mip_v1_0129,3869,3869,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,male,West Germany,6
+gles_mip_v1_0130,5112,5112,pre020s,Gelder in andere Länder geben egal aus welchem Grund,Gelder in andere Länder geben egal aus welchem Grund,9,52,elaborated,1,2025,female,West Germany,6
+gles_mip_v1_0131,7377,7377,pre020s,Schlechte Wirtschaftslage,Schlechte Wirtschaftslage,2,25,short_phrase,11,2025,female,West Germany,6
+gles_mip_v1_0132,7073,7073,pre020s,Zu viel kann man nicht genau definieren,Zu viel kann man nicht genau definieren,7,39,elaborated,1,2025,male,West Germany,5
+gles_mip_v1_0133,9083,9083,pre020s,Migrationsproblem,Migrationsproblem,1,17,single_word,4,2025,male,West Germany,6
+gles_mip_v1_0134,1610,1610,pre020s,"Migration, Energie, Kosten für Miete und Lebensmittel","Migration, Energie, Kosten für Miete und Lebensmittel",7,53,elaborated,1,2025,male,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0135,1286,1286,pre020s,bezahlbare Mieten und mehr wohnraum,bezahlbare Mieten und mehr wohnraum,5,35,elaborated,1,2025,male,East Germany,6
+gles_mip_v1_0136,7930,7930,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,male,East Germany,5
+gles_mip_v1_0137,1806,1806,pre020s,Migration,Migration,1,9,single_word,1128,2025,female,West Germany,6
+gles_mip_v1_0138,7129,7129,pre020s,Der Rechtsruck,Der Rechtsruck,2,14,short_phrase,11,2025,male,West Germany,1 left
+gles_mip_v1_0139,5555,5555,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,male,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0140,6273,6273,pre020s,Die Abwehr eines aggressiven Rußlands.,Die Abwehr eines aggressiven Rußlands.,5,38,elaborated,1,2025,male,West Germany,9
+gles_mip_v1_0141,8286,8286,pre020s,Innere Sicherheit,Innere Sicherheit,2,17,short_phrase,38,2025,female,West Germany,6
+gles_mip_v1_0142,4686,4686,pre020s,"Die Wirtschaft ist unterster Tiefpunkt, besser geht es nicht mehr tief!?","Die Wirtschaft ist unterster Tiefpunkt, besser geht es nicht mehr tief!?",11,72,elaborated,1,2025,male,West Germany,5
+gles_mip_v1_0143,6710,6710,pre020s,Ich bezahle Steuer und habe nichts davon wenn man Kinder bekommt wird man in der elternzeit bestraft weil man arbeiten war. Harz 4 Empfänger bekommen volle drei Jahre ihr Geld bekommen Kita bezahlt und alles und als Arbeitnehmer weis man kaum wie man über,Ich bezahle Steuer und habe nichts davon wenn man Kinder bekommt wird man in der elternzeit bestraft weil man arbeiten war. Harz 4 Empfänger bekommen volle drei Jahre ihr Geld bekommen Kita bezahlt und alles und als Arbeitnehmer weis man kaum wie man über,44,255,elaborated,1,2025,female,East Germany,5
+gles_mip_v1_0144,1243,1243,pre020s,Glaube an Demokratie,Glaube an Demokratie,3,20,short_phrase,1,2025,male,East Germany,6
+gles_mip_v1_0145,227,227,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,male,West Germany,6
+gles_mip_v1_0146,1918,1918,pre020s,Förderung der eigenen Wirtschaft,Förderung der eigenen Wirtschaft,4,32,short_phrase,1,2025,male,East Germany,6
+gles_mip_v1_0147,3912,3912,pre020s,Wirtschaftslage,Wirtschaftslage,1,15,single_word,51,2025,male,West Germany,6
+gles_mip_v1_0148,6136,6136,pre020s,"Das nicht an die Bürger des eigenen Landes gedacht wird, alles wird teurer und einem wird immer mehr Geld vom Staat aus der Tasche gezogen.","Das nicht an die Bürger des eigenen Landes gedacht wird, alles wird teurer und einem wird immer mehr Geld vom Staat aus der Tasche gezogen.",25,139,elaborated,1,2025,female,West Germany,1 left
+gles_mip_v1_0149,5650,5650,pre020s,Wird zu stark von der Wirtschaft beeinflusst,Wird zu stark von der Wirtschaft beeinflusst,7,44,elaborated,1,2025,female,West Germany,Not ratable
+gles_mip_v1_0150,1686,1686,pre020s,Das mehr Gesetze beachtet wird.,Das mehr Gesetze beachtet wird.,5,31,elaborated,1,2025,male,West Germany,5
+gles_mip_v1_0151,5165,5165,pre020s,Die Uneinigkeit unter einander,Die Uneinigkeit unter einander,4,30,short_phrase,1,2025,male,West Germany,5
+gles_mip_v1_0152,1847,1847,pre020s,Schutz der Millionäre und dessen Geld,Schutz der Millionäre und dessen Geld,6,37,elaborated,1,2025,female,East Germany,4
+gles_mip_v1_0153,6703,6703,pre020s,"Die Entwertung des Vermögens, durch Steuern","Die Entwertung des Vermögens, durch Steuern",6,43,elaborated,1,2025,male,West Germany,7
+gles_mip_v1_0154,6357,6357,pre020s,Falsche Asyl Politik die mit Frau Merkel angefangen hat.,Falsche Asyl Politik die mit Frau Merkel angefangen hat.,9,56,elaborated,1,2025,male,West Germany,9
+gles_mip_v1_0155,7687,7687,pre020s,Flüchtlinge,Flüchtlinge,1,11,single_word,85,2025,male,West Germany,6
+gles_mip_v1_0156,4670,4670,pre020s,"Sehr schlimm  wegen  kaufe ,Geld  und Arbeit","Sehr schlimm wegen kaufe ,Geld und Arbeit",7,41,elaborated,1,2025,female,West Germany,5
+gles_mip_v1_0157,6094,6094,pre020s,Immigranten,Immigranten,1,11,single_word,7,2025,male,East Germany,7
+gles_mip_v1_0158,8219,8219,pre020s,Die Hetze,Die Hetze,2,9,short_phrase,1,2025,male,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0159,6346,6346,pre020s,Umwelt,Umwelt,1,6,single_word,19,2025,female,West Germany,6
+gles_mip_v1_0160,5589,5589,pre020s,Asyl,Asyl,1,4,single_word,76,2025,male,West Germany,6
+gles_mip_v1_0161,3245,3245,pre020s,Geld bleibt nicht in Deutschland,Geld bleibt nicht in Deutschland,5,32,elaborated,1,2025,male,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0162,2062,2062,pre020s,Energie gesetz,Energie gesetz,2,14,short_phrase,1,2025,male,West Germany,4
+gles_mip_v1_0163,1180,1180,pre020s,Der Verdienst von Behinderten - Mitarbeiter in den WfbM´s,Der Verdienst von Behinderten - Mitarbeiter in den WfbM´s,9,57,elaborated,1,2025,male,West Germany,Not ratable
+gles_mip_v1_0164,7594,7594,pre020s,Das die Attentaten aufhören u.die Anschläge auf Veranstaltungen,Das die Attentaten aufhören u.die Anschläge auf Veranstaltungen,9,63,elaborated,1,2025,female,West Germany,Not ratable
+gles_mip_v1_0165,5693,5693,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,male,West Germany,9
+gles_mip_v1_0166,8114,8114,pre020s,"Flüchtlinge, Asylbewerber, die sich nicht einfügen/anpassen wollen","Flüchtlinge, Asylbewerber, die sich nicht einfügen/anpassen wollen",8,66,elaborated,1,2025,female,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0167,1406,1406,pre020s,Das seien Einigkeit herrschst und es nur ein Machtkampf ist ohne darauf zu hören was die Bürger wollen,Das seien Einigkeit herrschst und es nur ein Machtkampf ist ohne darauf zu hören was die Bürger wollen,18,102,elaborated,1,2025,male,West Germany,5
+gles_mip_v1_0168,4499,4499,pre020s,Arbeitsplätze,Arbeitsplätze,1,13,single_word,2,2025,male,West Germany,5
+gles_mip_v1_0169,4674,4674,pre020s,"Zu viele Flüchtige in Deutschland, sind gewalttätig aber werden nicht abgeschoben","Zu viele Flüchtige in Deutschland, sind gewalttätig aber werden nicht abgeschoben",11,81,elaborated,1,2025,female,West Germany,9
+gles_mip_v1_0170,7931,7931,pre020s,wirtschaft,wirtschaft,1,10,single_word,1133,2025,male,West Germany,4
+gles_mip_v1_0171,5998,5998,pre020s,soziale Ungerechtigkeit,soziale Ungerechtigkeit,2,23,short_phrase,27,2025,male,West Germany,8
+gles_mip_v1_0172,4716,4716,pre020s,Die wirtschaftliche Lage,Die wirtschaftliche Lage,3,24,short_phrase,11,2025,female,East Germany,6
+gles_mip_v1_0173,942,942,pre020s,Dass die Politiker Sachen versprechen und nicht einhalten. Finanzierung von waffen. Sich in zu viele Dinge einmischen,Dass die Politiker Sachen versprechen und nicht einhalten. Finanzierung von waffen. Sich in zu viele Dinge einmischen,17,117,elaborated,1,2025,female,West Germany,1 left
+gles_mip_v1_0174,9128,9128,pre020s,"Flüchtlinge, Steuern, erhöhte Kosten, niedrige Löhne","Flüchtlinge, Steuern, erhöhte Kosten, niedrige Löhne",6,52,elaborated,1,2025,female,West Germany,11 right
+gles_mip_v1_0175,8136,8136,pre020s,Menschen verharren auf ihrer Meinung und lassen keine andere zu.,Menschen verharren auf ihrer Meinung und lassen keine andere zu.,10,64,elaborated,1,2025,female,West Germany,3
+gles_mip_v1_0176,166,166,pre020s,Sozialstaat der nicht mehr Fordert sondern Sozialausgaben einfach verteilt,Sozialstaat der nicht mehr Fordert sondern Sozialausgaben einfach verteilt,9,74,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0177,4544,4544,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,female,West Germany,6
+gles_mip_v1_0178,2530,2530,pre020s,Asylpolitik bzw. was daraus gemacht wird.,Asylpolitik bzw. was daraus gemacht wird.,6,41,elaborated,1,2025,female,West Germany,3
+gles_mip_v1_0179,510,510,pre020s,"Alt Parteien , machen was sie wollen,","Alt Parteien , machen was sie wollen,",6,37,elaborated,1,2025,male,East Germany,9
+gles_mip_v1_0180,1538,1538,pre020s,Zu hohe Ausgaben für Soziales,Zu hohe Ausgaben für Soziales,5,29,elaborated,1,2025,male,West Germany,7
+gles_mip_v1_0181,7546,7546,pre020s,Migration,Migration,1,9,single_word,1128,2025,male,West Germany,8
+gles_mip_v1_0182,2148,2148,pre020s,geld im Ausland verschleudern,geld im Ausland verschleudern,4,29,short_phrase,1,2025,male,East Germany,8
+gles_mip_v1_0183,4980,4980,pre020s,Soziale Gerechtigkeit,Soziale Gerechtigkeit,2,21,short_phrase,40,2025,female,West Germany,3
+gles_mip_v1_0184,1132,1132,pre020s,Die nicht genau bekannte Zahl an Flüchtlingen,Die nicht genau bekannte Zahl an Flüchtlingen,7,45,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0185,7611,7611,pre020s,Verschuldung,Verschuldung,1,12,single_word,2,2025,male,West Germany,4
+gles_mip_v1_0186,8395,8395,pre020s,Klimawandel,Klimawandel,1,11,single_word,89,2025,male,West Germany,4
+gles_mip_v1_0187,5135,5135,pre020s,Flüchtlinge,Flüchtlinge,1,11,single_word,85,2025,male,East Germany,7
+gles_mip_v1_0188,2924,2924,pre020s,Migration,Migration,1,9,single_word,1128,2025,male,West Germany,9
+gles_mip_v1_0189,5639,5639,pre020s,Flüchtlinge,Flüchtlinge,1,11,single_word,85,2025,male,West Germany,7
+gles_mip_v1_0190,6408,6408,pre020s,Asyl,Asyl,1,4,single_word,76,2025,male,West Germany,6
+gles_mip_v1_0191,4166,4166,pre020s,Illegale Einwanderung,Illegale Einwanderung,2,21,short_phrase,13,2025,male,East Germany,5
+gles_mip_v1_0192,3969,3969,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,male,West Germany,6
+gles_mip_v1_0193,1980,1980,pre020s,Stärkung der Wirtschaft,Stärkung der Wirtschaft,3,23,short_phrase,6,2025,male,West Germany,4
+gles_mip_v1_0194,116,116,pre020s,Dass es (noch) keine Millionärssteuer gibt,Dass es (noch) keine Millionärssteuer gibt,6,42,elaborated,1,2025,female,West Germany,3
+gles_mip_v1_0195,2702,2702,pre020s,Wirtschaftliche Lage,Wirtschaftliche Lage,2,20,short_phrase,99,2025,female,West Germany,Not ratable
+gles_mip_v1_0196,8333,8333,pre020s,Anstieg rechtsextremer politischer Gesinnung,Anstieg rechtsextremer politischer Gesinnung,4,44,short_phrase,1,2025,male,West Germany,3
+gles_mip_v1_0197,6584,6584,pre020s,Wirtschaftliche Entwicklung,Wirtschaftliche Entwicklung,2,27,short_phrase,48,2025,male,West Germany,5
+gles_mip_v1_0198,4336,4336,pre020s,Rente soziales,Rente soziales,2,14,short_phrase,1,2025,male,West Germany,3
+gles_mip_v1_0199,8571,8571,pre020s,Bezahlbarkeit der Mieten und Umlagen,Bezahlbarkeit der Mieten und Umlagen,5,36,elaborated,1,2025,female,West Germany,6
+gles_mip_v1_0200,884,884,pre020s,"die AFD, ihre Botschaften und die Art diese zu verbreiten","die AFD, ihre Botschaften und die Art diese zu verbreiten",10,57,elaborated,1,2025,female,West Germany,5
+gles_mip_v1_0201,6905,6905,pre020s,"Stimmung wird , bei berechtigter Kritik, runter geredet","Stimmung wird , bei berechtigter Kritik, runter geredet",7,55,elaborated,1,2025,male,West Germany,2
+gles_mip_v1_0202,6481,6481,pre020s,zunehmender Rassismus und Fremdenfeindlichkeit,zunehmender Rassismus und Fremdenfeindlichkeit,4,46,short_phrase,1,2025,female,West Germany,Not ratable
+gles_mip_v1_0203,5799,5799,pre020s,Asylanten,Asylanten,1,9,single_word,52,2025,female,West Germany,Not ratable
+gles_mip_v1_0204,5429,5429,pre020s,Migrations Politik,Migrations Politik,2,18,short_phrase,2,2025,male,West Germany,9
+gles_mip_v1_0205,3660,3660,pre020s,Keine Führungspersönlichkeit an der Spitze,Keine Führungspersönlichkeit an der Spitze,5,42,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0206,1684,1684,pre020s,"Die vielen Flüchtlinge, Und die inflation","Die vielen Flüchtlinge, Und die inflation",6,41,elaborated,1,2025,female,West Germany,8
+gles_mip_v1_0207,3211,3211,pre020s,Rechtsruck,Rechtsruck,1,10,single_word,46,2025,male,West Germany,5
+gles_mip_v1_0208,1386,1386,pre020s,Der Wohnungs Mangel,Der Wohnungs Mangel,3,19,short_phrase,1,2025,female,East Germany,5
+gles_mip_v1_0209,6302,6302,pre020s,Zu viel Geld für das Ausland und nichts für deutsche,Zu viel Geld für das Ausland und nichts für deutsche,10,52,elaborated,1,2025,female,West Germany,Not ratable
+gles_mip_v1_0210,3576,3576,pre020s,Gewalt durch Flüchtlinge,Gewalt durch Flüchtlinge,3,24,short_phrase,1,2025,female,East Germany,6
+gles_mip_v1_0211,6323,6323,pre020s,Ungleichbehandlung  FAMILIEN arbeiten und Sozialhilfeempfänger,Ungleichbehandlung FAMILIEN arbeiten und Sozialhilfeempfänger,5,61,elaborated,1,2025,female,West Germany,1 left
+gles_mip_v1_0212,4089,4089,pre020s,Wirtschaft wieder in Schwung bringen,Wirtschaft wieder in Schwung bringen,5,36,elaborated,1,2025,female,East Germany,5
+gles_mip_v1_0213,8979,8979,pre020s,Trump und Ukraine,Trump und Ukraine,3,17,short_phrase,1,2025,male,West Germany,7
+gles_mip_v1_0214,3796,3796,pre020s,Umgang mit straf-auffälligen Personen,Umgang mit straf-auffälligen Personen,5,37,elaborated,1,2025,female,West Germany,4
+gles_mip_v1_0215,1948,1948,pre020s,wirtschaftliche Situation,wirtschaftliche Situation,2,25,short_phrase,22,2025,male,East Germany,6
+gles_mip_v1_0216,7151,7151,pre020s,Asylpolitik,Asylpolitik,1,11,single_word,143,2025,male,West Germany,8
+gles_mip_v1_0217,230,230,pre020s,"Privatbürger werden zu hohen Ausgaben gezwungen. z.B. E-Autos, Wärmepumpen, das Geld hat man in Rente nicht mehr","Privatbürger werden zu hohen Ausgaben gezwungen. z.B. E-Autos, Wärmepumpen, das Geld hat man in Rente nicht mehr",19,112,elaborated,1,2025,male,West Germany,7
+gles_mip_v1_0218,3481,3481,pre020s,Unser Problem ist die gegenwärtige Regierung besonders die Grünen haben unsere Wirtschaft an die Wand gefahren. Weiteres Problem sind die vielen unberechtigten Immigranten im Land.,Unser Problem ist die gegenwärtige Regierung besonders die Grünen haben unsere Wirtschaft an die Wand gefahren. Weiteres Problem sind die vielen unberechtigten Immigranten im Land.,25,180,elaborated,1,2025,male,East Germany,6
+gles_mip_v1_0219,1881,1881,pre020s,asylanten,asylanten,1,9,single_word,52,2025,female,West Germany,5
+gles_mip_v1_0220,4768,4768,pre020s,Gerechtigkeit,Gerechtigkeit,1,13,single_word,11,2025,female,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0221,8140,8140,pre020s,"Es wird sich meiner Meinung nach zu wenig um die Deutschen gekümmert, Wir brauchen ein festes Einkommen. Wir brauchen alle mehr Geld und mehr Möglichkeiten beruflich und finanziell und werden durch viele Sachen in andere Länder und Finanzierungen belastet","Es wird sich meiner Meinung nach zu wenig um die Deutschen gekümmert, Wir brauchen ein festes Einkommen. Wir brauchen alle mehr Geld und mehr Möglichkeiten beruflich und finanziell und werden durch viele Sachen in andere Länder und Finanzierungen belastet",39,255,elaborated,1,2025,female,West Germany,1 left
+gles_mip_v1_0222,862,862,pre020s,"Unsichere politische Lage, Energiepreise, Inflation","Unsichere politische Lage, Energiepreise, Inflation",5,51,elaborated,1,2025,female,East Germany,5
+gles_mip_v1_0223,5111,5111,pre020s,"Migration, Klima und Wirtschaft","Migration, Klima und Wirtschaft",4,31,short_phrase,1,2025,male,West Germany,1 left
+gles_mip_v1_0224,5570,5570,pre020s,Populismus,Populismus,1,10,single_word,5,2025,male,West Germany,5
+gles_mip_v1_0225,8174,8174,pre020s,Das keiner hält was er verspricht,Das keiner hält was er verspricht,6,33,elaborated,1,2025,female,West Germany,1 left
+gles_mip_v1_0226,7634,7634,pre020s,"Selbstherrliche, egoistische Menschen sind an der Macht","Selbstherrliche, egoistische Menschen sind an der Macht",7,55,elaborated,1,2025,female,West Germany,5
+gles_mip_v1_0227,3205,3205,pre020s,Was wird aus der eigenen Bevölkerung,Was wird aus der eigenen Bevölkerung,6,36,elaborated,1,2025,female,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0228,6151,6151,pre020s,Zuwanderung,Zuwanderung,1,11,single_word,113,2025,male,East Germany,6
+gles_mip_v1_0229,6019,6019,pre020s,Die wirtschaftliche Situation von Unternehmen und Prvathaushalten.,Die wirtschaftliche Situation von Unternehmen und Prvathaushalten.,7,66,elaborated,1,2025,male,West Germany,3
+gles_mip_v1_0230,7580,7580,pre020s,Die Politik is das problem,Die Politik is das problem,5,26,elaborated,1,2025,male,West Germany,Not ratable
+gles_mip_v1_0231,6778,6778,pre020s,flüchtlinge,flüchtlinge,1,11,single_word,85,2025,female,West Germany,Not ratable
+gles_mip_v1_0232,4389,4389,pre020s,Sozialer Frieden,Sozialer Frieden,2,16,short_phrase,2,2025,male,West Germany,7
+gles_mip_v1_0233,3635,3635,pre020s,"das Wirtschaftswachstum , in Europa Schlußlicht, der Hamburger Hafen - 22 Prozent Container-Verkehr","das Wirtschaftswachstum , in Europa Schlußlicht, der Hamburger Hafen - 22 Prozent Container-Verkehr",12,99,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0234,2225,2225,pre020s,wirtschaftliche Stabilität,wirtschaftliche Stabilität,2,26,short_phrase,3,2025,female,West Germany,5
+gles_mip_v1_0235,8441,8441,pre020s,die illegalen einwanderer,die illegalen einwanderer,3,25,short_phrase,1,2025,female,West Germany,5
+gles_mip_v1_0236,7970,7970,pre020s,Der Mittelstand wird ausgenommen.,Der Mittelstand wird ausgenommen.,4,33,short_phrase,1,2025,female,West Germany,4
+gles_mip_v1_0237,8732,8732,pre020s,Es wird zuwenig gegen Menschen mit Migrations Hintergrund getan,Es wird zuwenig gegen Menschen mit Migrations Hintergrund getan,9,63,elaborated,1,2025,female,West Germany,9
+gles_mip_v1_0238,5776,5776,pre020s,die sich immer mehr verschlechternde situation der rentner,die sich immer mehr verschlechternde situation der rentner,8,58,elaborated,1,2025,female,West Germany,6
+gles_mip_v1_0239,3601,3601,pre020s,Asyl und steuer,Asyl und steuer,3,15,short_phrase,1,2025,female,West Germany,5
+gles_mip_v1_0240,6896,6896,pre020s,Krieg in der Ukraine und die damit verbundene Aufrüstung,Krieg in der Ukraine und die damit verbundene Aufrüstung,9,56,elaborated,1,2025,female,West Germany,4
+gles_mip_v1_0241,2453,2453,pre020s,Zu hohe Steuern,Zu hohe Steuern,3,15,short_phrase,7,2025,male,East Germany,9
+gles_mip_v1_0242,8273,8273,pre020s,Migration,Migration,1,9,single_word,1128,2025,male,West Germany,6
+gles_mip_v1_0243,6085,6085,pre020s,Das die falschen Leute inne enger Geld bekommen,Das die falschen Leute inne enger Geld bekommen,8,47,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0244,6826,6826,pre020s,unkontrollerite Migration,unkontrollerite Migration,2,25,short_phrase,1,2025,male,West Germany,11 right
+gles_mip_v1_0245,2121,2121,pre020s,illegale Migration,illegale Migration,2,18,short_phrase,17,2025,male,West Germany,9
+gles_mip_v1_0246,7046,7046,pre020s,Rechtsruck,Rechtsruck,1,10,single_word,46,2025,male,West Germany,3
+gles_mip_v1_0247,475,475,pre020s,Die Wirtschlaftsflaute,Die Wirtschlaftsflaute,2,22,short_phrase,1,2025,male,West Germany,7
+gles_mip_v1_0248,1695,1695,pre020s,Antidemokratisches und faschistisches Gedankengut wird zunehmend mit größerer Reichweite verbreitet und normalisiert,Antidemokratisches und faschistisches Gedankengut wird zunehmend mit größerer Reichweite verbreitet und normalisiert,12,116,elaborated,1,2025,male,West Germany,3
+gles_mip_v1_0249,8919,8919,pre020s,Wirtschaft fördern,Wirtschaft fördern,2,18,short_phrase,1,2025,female,East Germany,6
+gles_mip_v1_0250,6632,6632,pre020s,Der wachsende zuwachs von rechten Meinungen,Der wachsende zuwachs von rechten Meinungen,6,43,elaborated,1,2025,female,West Germany,3
+gles_mip_v1_0251,7137,7137,pre020s,Das sich die Parteien unter sich nicht einig sind,Das sich die Parteien unter sich nicht einig sind,9,49,elaborated,1,2025,female,West Germany,7
+gles_mip_v1_0252,868,868,pre020s,Fehlende Fachleute in der Regierung,Fehlende Fachleute in der Regierung,5,35,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0253,797,797,pre020s,Die Verschwendung von Steuergeld,Die Verschwendung von Steuergeld,4,32,short_phrase,1,2025,female,West Germany,6
+gles_mip_v1_0254,7413,7413,pre020s,Wirtschaftlichkeit der Zukunft (10+ Jahre),Wirtschaftlichkeit der Zukunft (10+ Jahre),5,42,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0255,6063,6063,pre020s,Wirtschaftliche Situation,Wirtschaftliche Situation,2,25,short_phrase,22,2025,female,West Germany,1 left
+gles_mip_v1_0256,4554,4554,pre020s,Migration,Migration,1,9,single_word,1128,2025,male,West Germany,8
+gles_mip_v1_0257,7602,7602,pre020s,Zu viel Geld für Leute die nicht arbeiten gehen,Zu viel Geld für Leute die nicht arbeiten gehen,9,47,elaborated,1,2025,female,West Germany,9
+gles_mip_v1_0258,1467,1467,pre020s,"Aufstieg der Nazipartei AfD, Abschröpfen des Mittelstands und den Armen, Rüstung, Inflation, Fachkräftemangel, Leere Rentenkassen und die Krankenhausreformen und gesamte Gesundheitspolitik treibt mir die Tränen in die Augen! usw usw usw......","Aufstieg der Nazipartei AfD, Abschröpfen des Mittelstands und den Armen, Rüstung, Inflation, Fachkräftemangel, Leere Rentenkassen und die Krankenhausreformen und gesamte Gesundheitspolitik treibt mir die Tränen in die Augen! usw usw usw......",31,242,elaborated,1,2025,male,West Germany,5
+gles_mip_v1_0259,5964,5964,pre020s,"Bei allen Parteien unfähige, egomanische Dummköpfe, welche ihre Arbeit nicht für das Land machen sondern nur für den eigenen Geldbeutel.","Bei allen Parteien unfähige, egomanische Dummköpfe, welche ihre Arbeit nicht für das Land machen sondern nur für den eigenen Geldbeutel.",20,136,elaborated,1,2025,male,East Germany,No answer
+gles_mip_v1_0260,1104,1104,pre020s,Die Einstellung gegen Russland,Die Einstellung gegen Russland,4,30,short_phrase,1,2025,male,West Germany,4
+gles_mip_v1_0261,1214,1214,pre020s,Probleme im Eigenen Land zur Zufriedenheit des Volkes zu lösen!,Probleme im Eigenen Land zur Zufriedenheit des Volkes zu lösen!,10,63,elaborated,1,2025,female,West Germany,3
+gles_mip_v1_0262,1358,1358,pre020s,"Das es für Menschen, die aus gesundheitlichen Problemen nicht mehr arbeiten können und deswegen das Bürgergeld bz. die EM-Rente (Erwerbsminderungsrente und angeglichen das Bürgergeld bekommen, genügend Geld gibt, damit diese Menschen am Leben teilhaben.","Das es für Menschen, die aus gesundheitlichen Problemen nicht mehr arbeiten können und deswegen das Bürgergeld bz. die EM-Rente (Erwerbsminderungsrente und angeglichen das Bürgergeld bekommen, genügend Geld gibt, damit diese Menschen am Leben teilhaben.",35,253,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0263,8531,8531,pre020s,Wirtschaftliche Entwicklung,Wirtschaftliche Entwicklung,2,27,short_phrase,48,2025,female,West Germany,7
+gles_mip_v1_0264,2285,2285,pre020s,"Geld, Flüchtlinge","Geld, Flüchtlinge",2,17,short_phrase,1,2025,female,West Germany,6
+gles_mip_v1_0265,7827,7827,pre020s,Einwanderung und deren Bezahlung für alles von unseren Steuergeldern und der vollkommene wahnsinnige Bau von Windkraftanlagen ohne Rücksicht auf Mensch und Natur,Einwanderung und deren Bezahlung für alles von unseren Steuergeldern und der vollkommene wahnsinnige Bau von Windkraftanlagen ohne Rücksicht auf Mensch und Natur,22,161,elaborated,1,2025,female,East Germany,11 right
+gles_mip_v1_0266,642,642,pre020s,Ökonomische Entwicklung,Ökonomische Entwicklung,2,23,short_phrase,1,2025,male,West Germany,6
+gles_mip_v1_0267,1875,1875,pre020s,zuwanderung/asylpolitik,zuwanderung/asylpolitik,2,23,short_phrase,1,2025,male,East Germany,5
+gles_mip_v1_0268,1755,1755,pre020s,Sie reden zu wenig zusammen.,Sie reden zu wenig zusammen.,5,28,elaborated,1,2025,female,West Germany,Not ratable
+gles_mip_v1_0269,1640,1640,pre020s,Demokratie,Demokratie,1,10,single_word,25,2025,male,West Germany,6
+gles_mip_v1_0270,3147,3147,pre020s,politische Lage,politische Lage,2,15,short_phrase,1,2025,male,East Germany,6
+gles_mip_v1_0271,7584,7584,pre020s,der Rechtsruck in der Gesellschaft,der Rechtsruck in der Gesellschaft,5,34,elaborated,1,2025,male,East Germany,5
+gles_mip_v1_0272,3417,3417,pre020s,Mehr für die eigene Bevölkerung tun.,Mehr für die eigene Bevölkerung tun.,6,36,elaborated,1,2025,male,East Germany,6
+gles_mip_v1_0273,8433,8433,pre020s,Keine Kompetenz der zuständigen Politiker,Keine Kompetenz der zuständigen Politiker,5,41,elaborated,1,2025,female,West Germany,6
+gles_mip_v1_0274,4150,4150,pre020s,die Beibehaltung des Rechts auf Asyl,die Beibehaltung des Rechts auf Asyl,6,36,elaborated,1,2025,female,West Germany,2
+gles_mip_v1_0275,8949,8949,pre020s,Arbeiten lohnt sich nicht mehr!,Arbeiten lohnt sich nicht mehr!,5,31,elaborated,1,2025,male,West Germany,1 left
+gles_mip_v1_0276,4588,4588,pre020s,Keine klare Linie der Ziele,Keine klare Linie der Ziele,5,27,elaborated,1,2025,female,West Germany,3
+gles_mip_v1_0277,2918,2918,pre020s,DieErhaltung der Demokratie,DieErhaltung der Demokratie,3,27,short_phrase,1,2025,female,West Germany,3
+gles_mip_v1_0278,3438,3438,pre020s,"Beim Koalitionsvertrag können die Parteien sich noch einigen, in der Regierungszeit beharrt jede Partei auf ihrer Meinung und ist nicht bereit sich zu bewegen.","Beim Koalitionsvertrag können die Parteien sich noch einigen, in der Regierungszeit beharrt jede Partei auf ihrer Meinung und ist nicht bereit sich zu bewegen.",24,159,elaborated,1,2025,female,West Germany,4
+gles_mip_v1_0279,6930,6930,pre020s,Sanktion für Russland aufzuheben. Inflation zu stoppen,Sanktion für Russland aufzuheben. Inflation zu stoppen,7,54,elaborated,1,2025,female,West Germany,9
+gles_mip_v1_0280,9078,9078,pre020s,"Wirtschaftslage (Armut und Reichtum), hohe Steuern","Wirtschaftslage (Armut und Reichtum), hohe Steuern",6,50,elaborated,1,2025,female,West Germany,5
+gles_mip_v1_0281,8511,8511,pre020s,"Gerechtigkeit zwischen Arm und Reich, wer viel hat verdient viel und das ist ungerecht","Gerechtigkeit zwischen Arm und Reich, wer viel hat verdient viel und das ist ungerecht",14,86,elaborated,1,2025,male,West Germany,5
+gles_mip_v1_0282,7877,7877,pre020s,Globale Sicherheit,Globale Sicherheit,2,18,short_phrase,1,2025,female,West Germany,2
+gles_mip_v1_0283,1621,1621,pre020s,Wirtschaftliche Entwicklung,Wirtschaftliche Entwicklung,2,27,short_phrase,48,2025,male,West Germany,6
+gles_mip_v1_0284,8120,8120,pre020s,Armut,Armut,1,5,single_word,33,2025,female,West Germany,6
+gles_mip_v1_0285,3089,3089,pre020s,mangelde Investitionen in die Infrastruktur,mangelde Investitionen in die Infrastruktur,5,43,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0286,3694,3694,pre020s,Innere Sicherheit,Innere Sicherheit,2,17,short_phrase,38,2025,female,West Germany,5
+gles_mip_v1_0287,7019,7019,pre020s,Demokratie zu erhalten,Demokratie zu erhalten,3,22,short_phrase,1,2025,female,West Germany,11 right
+gles_mip_v1_0288,5694,5694,pre020s,Wirtschaft in Deutschland,Wirtschaft in Deutschland,3,25,short_phrase,2,2025,female,East Germany,6
+gles_mip_v1_0289,8061,8061,pre020s,Migration,Migration,1,9,single_word,1128,2025,male,East Germany,2
+gles_mip_v1_0290,8754,8754,pre020s,Migrationspolitik,Migrationspolitik,1,17,single_word,61,2025,female,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0291,4254,4254,pre020s,Steigende Inflation,Steigende Inflation,2,19,short_phrase,2,2025,female,East Germany,6
+gles_mip_v1_0292,7901,7901,pre020s,Dass alles teurer geworden ist und das Geld nicht mehr reicht trotz Arbeiten,Dass alles teurer geworden ist und das Geld nicht mehr reicht trotz Arbeiten,13,76,elaborated,1,2025,female,West Germany,7
+gles_mip_v1_0293,8069,8069,pre020s,die Wirtschaftslage,die Wirtschaftslage,2,19,short_phrase,5,2025,female,East Germany,4
+gles_mip_v1_0294,8650,8650,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,female,West Germany,6
+gles_mip_v1_0295,7085,7085,pre020s,keine Regierung für das Volk,keine Regierung für das Volk,5,28,elaborated,1,2025,male,East Germany,11 right
+gles_mip_v1_0296,4657,4657,pre020s,Migration,Migration,1,9,single_word,1128,2025,male,West Germany,11 right
+gles_mip_v1_0297,1337,1337,pre020s,Unkontrollierte Migration/Ausländerkriminiltät,Unkontrollierte Migration/Ausländerkriminiltät,3,46,short_phrase,1,2025,female,West Germany,10
+gles_mip_v1_0298,4539,4539,pre020s,"Armut ist immer noch zu groß ich gehöre dazu,alles ist immer noch zu teuer ,Ukraine bekommt nicht alles was sie braucht,wenns das bekommt ist es zuwenig.","Armut ist immer noch zu groß ich gehöre dazu,alles ist immer noch zu teuer ,Ukraine bekommt nicht alles was sie braucht,wenns das bekommt ist es zuwenig.",28,153,elaborated,1,2025,female,East Germany,6
+gles_mip_v1_0299,6553,6553,pre020s,Flüchtlinge raus die sich nicht benehmen,Flüchtlinge raus die sich nicht benehmen,6,40,elaborated,1,2025,male,West Germany,Not ratable
+gles_mip_v1_0300,6882,6882,pre020s,Wirtschaft und Steuern,Wirtschaft und Steuern,3,22,short_phrase,1,2025,female,West Germany,6
+gles_mip_v1_0301,3693,3693,pre020s,Politik für die normalen Bürger zu machen und nicht für die reichen und die Politiker,Politik für die normalen Bürger zu machen und nicht für die reichen und die Politiker,15,85,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0302,4232,4232,pre020s,Asylpolitik,Asylpolitik,1,11,single_word,143,2025,male,West Germany,7
+gles_mip_v1_0303,4732,4732,pre020s,Die Einwanderung,Die Einwanderung,2,16,short_phrase,2,2025,male,West Germany,1 left
+gles_mip_v1_0304,3950,3950,pre020s,Migration,Migration,1,9,single_word,1128,2025,female,East Germany,6
+gles_mip_v1_0305,5895,5895,pre020s,Wohnungsnot,Wohnungsnot,1,11,single_word,9,2025,female,West Germany,Not ratable
+gles_mip_v1_0306,3263,3263,pre020s,Schlechte Wirtschaftslage,Schlechte Wirtschaftslage,2,25,short_phrase,11,2025,male,West Germany,6
+gles_mip_v1_0307,7158,7158,pre020s,Wirtschaftskrise,Wirtschaftskrise,1,16,single_word,49,2025,male,West Germany,9
+gles_mip_v1_0308,1902,1902,pre020s,Ungleiche Steuerverteilung,Ungleiche Steuerverteilung,2,26,short_phrase,1,2025,female,West Germany,3
+gles_mip_v1_0309,1876,1876,pre020s,Die vielen Spenden an andere,Die vielen Spenden an andere,5,28,elaborated,1,2025,female,West Germany,5
+gles_mip_v1_0310,8607,8607,pre020s,inkontrollierte Zuwanderung,inkontrollierte Zuwanderung,2,27,short_phrase,1,2025,male,West Germany,4
+gles_mip_v1_0311,1797,1797,pre020s,Migration,Migration,1,9,single_word,1128,2025,female,West Germany,9
+gles_mip_v1_0312,1811,1811,pre020s,Gesetzliche Rentenvorsorge,Gesetzliche Rentenvorsorge,2,26,short_phrase,1,2025,male,West Germany,7
+gles_mip_v1_0313,8158,8158,pre020s,Ukraine Krieg,Ukraine Krieg,2,13,short_phrase,10,2025,male,West Germany,4
+gles_mip_v1_0314,6884,6884,pre020s,Finanzen,Finanzen,1,8,single_word,25,2025,female,West Germany,5
+gles_mip_v1_0315,4437,4437,pre020s,Erhöhung der Kosten,Erhöhung der Kosten,3,19,short_phrase,1,2025,male,West Germany,Not ratable
+gles_mip_v1_0316,5814,5814,pre020s,Arbeitsmarkt,Arbeitsmarkt,1,12,single_word,5,2025,male,West Germany,Not ratable
+gles_mip_v1_0317,2288,2288,pre020s,Falsche Regierung,Falsche Regierung,2,17,short_phrase,1,2025,female,West Germany,Not ratable
+gles_mip_v1_0318,5528,5528,pre020s,Katastrophales Gesundheitssystem,Katastrophales Gesundheitssystem,2,32,short_phrase,1,2025,female,East Germany,3
+gles_mip_v1_0319,6529,6529,pre020s,Illigale Einwanderer die sich nicht anpassen und benehmen können,Illigale Einwanderer die sich nicht anpassen und benehmen können,9,64,elaborated,1,2025,male,West Germany,7
+gles_mip_v1_0320,882,882,pre020s,Dass man immer noch,Dass man immer noch,4,19,short_phrase,1,2025,female,West Germany,6
+gles_mip_v1_0321,8809,8809,pre020s,Migration,Migration,1,9,single_word,1128,2025,male,West Germany,4
+gles_mip_v1_0322,7223,7223,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,female,West Germany,8
+gles_mip_v1_0323,792,792,pre020s,Afd/Ausländerfeindlichkeit,Afd/Ausländerfeindlichkeit,2,26,short_phrase,1,2025,female,West Germany,5
+gles_mip_v1_0324,500,500,pre020s,Rentensystem,Rentensystem,1,12,single_word,3,2025,male,West Germany,6
+gles_mip_v1_0325,4555,4555,pre020s,Jeder der illegal eingereist ist darf bleiben,Jeder der illegal eingereist ist darf bleiben,7,45,elaborated,1,2025,male,East Germany,2
+gles_mip_v1_0326,1373,1373,pre020s,Die sind sich nie einig,Die sind sich nie einig,5,23,elaborated,1,2025,male,East Germany,Not ratable
+gles_mip_v1_0327,7781,7781,pre020s,Unstimmigkeiten,Unstimmigkeiten,1,15,single_word,1,2025,female,West Germany,6
+gles_mip_v1_0328,8969,8969,pre020s,Energiewende,Energiewende,1,12,single_word,18,2025,male,West Germany,10
+gles_mip_v1_0329,644,644,pre020s,Alle Parteien zusammen denken nicht gemeinsam an Deutschland,Alle Parteien zusammen denken nicht gemeinsam an Deutschland,8,60,elaborated,1,2025,male,West Germany,5
+gles_mip_v1_0330,1449,1449,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,male,West Germany,5
+gles_mip_v1_0331,7366,7366,pre020s,Zu viele kriminelle illegale Ausländer,Zu viele kriminelle illegale Ausländer,5,38,elaborated,1,2025,female,West Germany,8
+gles_mip_v1_0332,1493,1493,pre020s,Problem der gerechten Verteilung von Sozialleistungen,Problem der gerechten Verteilung von Sozialleistungen,6,53,elaborated,1,2025,female,West Germany,6
+gles_mip_v1_0333,6656,6656,pre020s,Energiekrise,Energiekrise,1,12,single_word,4,2025,female,East Germany,6
+gles_mip_v1_0334,6189,6189,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,male,West Germany,6
+gles_mip_v1_0335,5622,5622,pre020s,Migration,Migration,1,9,single_word,1128,2025,male,East Germany,3
+gles_mip_v1_0336,6809,6809,pre020s,Steuern und Ausländer,Steuern und Ausländer,3,21,short_phrase,1,2025,female,West Germany,4
+gles_mip_v1_0337,3611,3611,pre020s,"Wirtschaftsrückgang, keine progression","Wirtschaftsrückgang, keine progression",3,38,short_phrase,1,2025,male,West Germany,8
+gles_mip_v1_0338,2194,2194,pre020s,Ukraine,Ukraine,1,7,single_word,13,2025,female,West Germany,6
+gles_mip_v1_0339,2044,2044,pre020s,schwache Wirtschaft,schwache Wirtschaft,2,19,short_phrase,9,2025,male,East Germany,4
+gles_mip_v1_0340,2542,2542,pre020s,wirtschaft,wirtschaft,1,10,single_word,1133,2025,male,West Germany,6
+gles_mip_v1_0341,4080,4080,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,female,West Germany,7
+gles_mip_v1_0342,8594,8594,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,female,East Germany,5
+gles_mip_v1_0343,2124,2124,pre020s,Unklarheit der Prioritäten: sozial vs. wirtschaftlich,Unklarheit der Prioritäten: sozial vs. wirtschaftlich,6,53,elaborated,1,2025,male,West Germany,5
+gles_mip_v1_0344,794,794,pre020s,Zuviel Einflußnahme von Aussen (Elon Wlademier Donald u.A.),Zuviel Einflußnahme von Aussen (Elon Wlademier Donald u.A.),9,59,elaborated,1,2025,male,West Germany,6
+gles_mip_v1_0345,3716,3716,pre020s,Menschen fühlen sich nicht mehr sicher,Menschen fühlen sich nicht mehr sicher,6,38,elaborated,1,2025,female,West Germany,4
+gles_mip_v1_0346,490,490,pre020s,migration,migration,1,9,single_word,1128,2025,female,West Germany,3
+gles_mip_v1_0347,5945,5945,pre020s,Die Zuwanderung,Die Zuwanderung,2,15,short_phrase,5,2025,female,West Germany,8
+gles_mip_v1_0348,4819,4819,pre020s,dass die Parteien sich nur noch streiten und  so auf keinen Nenner kommen,dass die Parteien sich nur noch streiten und so auf keinen Nenner kommen,13,72,elaborated,1,2025,female,West Germany,5
+gles_mip_v1_0349,1659,1659,pre020s,Komplette Wirtschaft,Komplette Wirtschaft,2,20,short_phrase,1,2025,female,West Germany,Not ratable
+gles_mip_v1_0350,2629,2629,pre020s,Soziale Gerechtigkeit,Soziale Gerechtigkeit,2,21,short_phrase,40,2025,female,West Germany,1 left
+gles_mip_v1_0351,3385,3385,pre020s,Wirtschaftliche Entwicklung,Wirtschaftliche Entwicklung,2,27,short_phrase,48,2025,female,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0352,8976,8976,pre020s,Das Volk für dumm zu verkaufen! (Lügen),Das Volk für dumm zu verkaufen! (Lügen),7,39,elaborated,1,2025,male,West Germany,5
+gles_mip_v1_0353,8916,8916,pre020s,bedingungslose hilfe für die ukraine,bedingungslose hilfe für die ukraine,5,36,elaborated,1,2025,male,East Germany,6
+gles_mip_v1_0354,8063,8063,pre020s,Das Menschen im eigenen Land mehr Beachtung bekommen,Das Menschen im eigenen Land mehr Beachtung bekommen,8,52,elaborated,1,2025,female,West Germany,10
+gles_mip_v1_0355,6039,6039,pre020s,Migration,Migration,1,9,single_word,1128,2025,female,East Germany,4
+gles_mip_v1_0356,4452,4452,pre020s,Kosten derzeit zu viel Flüchtlinge wohnung finden,Kosten derzeit zu viel Flüchtlinge wohnung finden,7,49,elaborated,1,2025,male,West Germany,Not ratable
+gles_mip_v1_0357,7322,7322,pre020s,Klimawandel,Klimawandel,1,11,single_word,89,2025,male,East Germany,6
+gles_mip_v1_0358,4016,4016,pre020s,"Kriminelle und illegale Einwanderer, Energiepolitik","Kriminelle und illegale Einwanderer, Energiepolitik",5,51,elaborated,1,2025,male,West Germany,11 right
+gles_mip_v1_0359,680,680,pre020s,Raus aus dem Ukraine-Krieg. Wir stehen vor einem Weltkrieg,Raus aus dem Ukraine-Krieg. Wir stehen vor einem Weltkrieg,10,58,elaborated,1,2025,male,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0360,4255,4255,pre020s,Die Politische Probeme sind sehr richtig fuer die Deutschland,Die Politische Probeme sind sehr richtig fuer die Deutschland,9,61,elaborated,1,2025,female,East Germany,1 left
+gles_mip_v1_0361,3547,3547,pre020s,Digitalisierung,Digitalisierung,1,15,single_word,1,2025,male,East Germany,3
+gles_mip_v1_0362,945,945,pre020s,Der Rechtsruck,Der Rechtsruck,2,14,short_phrase,11,2025,male,West Germany,3
+gles_mip_v1_0363,5969,5969,pre020s,"Die freiheitlich, demokratische Grundordnung, die in den letzten 4 Jahren verloren gegangen ist wieder herzustellen. Insbesondere Meinungsfreiheit und Informationsfreiheit sowie die Abschaffung der idiotischen neuen  Sicherheitsgesetze .","Die freiheitlich, demokratische Grundordnung, die in den letzten 4 Jahren verloren gegangen ist wieder herzustellen. Insbesondere Meinungsfreiheit und Informationsfreiheit sowie die Abschaffung der idiotischen neuen Sicherheitsgesetze .",26,236,elaborated,1,2025,male,West Germany,Not ratable
+gles_mip_v1_0364,5399,5399,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,male,West Germany,7
+gles_mip_v1_0365,3206,3206,pre020s,Wirtschaftliche Lage,Wirtschaftliche Lage,2,20,short_phrase,99,2025,male,West Germany,8
+gles_mip_v1_0366,973,973,pre020s,"Falsche Nachricht, Hass und Hetze.","Falsche Nachricht, Hass und Hetze.",5,34,elaborated,1,2025,female,East Germany,2
+gles_mip_v1_0367,7339,7339,pre020s,Belastung der Sozialkassen durch Nichtzahler,Belastung der Sozialkassen durch Nichtzahler,5,44,elaborated,1,2025,male,West Germany,2
+gles_mip_v1_0368,2227,2227,pre020s,Das nicht alles so teuer ist die Wirtschaft lage,Das nicht alles so teuer ist die Wirtschaft lage,9,48,elaborated,1,2025,female,West Germany,Not ratable
+gles_mip_v1_0369,3528,3528,pre020s,Wirtschaft und Soziales,Wirtschaft und Soziales,3,23,short_phrase,2,2025,male,East Germany,5
+gles_mip_v1_0370,1215,1215,pre020s,bürgergeld,bürgergeld,1,10,single_word,13,2025,male,West Germany,5
+gles_mip_v1_0371,1114,1114,pre020s,Kriminalität,Kriminalität,1,12,single_word,31,2025,female,West Germany,11 right
+gles_mip_v1_0372,4487,4487,pre020s,Die Politiker sind nicht fähig etwas zu beschließen es wird immer nur diskutiert,Die Politiker sind nicht fähig etwas zu beschließen es wird immer nur diskutiert,13,80,elaborated,1,2025,female,West Germany,5
+gles_mip_v1_0373,3683,3683,pre020s,"Inkompetenz der Poliker was die Themen Wohnen, Abkommen, Arbeitsmoral etc angeht","Inkompetenz der Poliker was die Themen Wohnen, Abkommen, Arbeitsmoral etc angeht",11,80,elaborated,1,2025,female,West Germany,3
+gles_mip_v1_0374,2711,2711,pre020s,Bürokratie,Bürokratie,1,10,single_word,30,2025,male,West Germany,7
+gles_mip_v1_0375,6831,6831,pre020s,Spritkosten,Spritkosten,1,11,single_word,1,2025,male,East Germany,Not ratable
+gles_mip_v1_0376,1429,1429,pre020s,neue Strömungen an den Rändern des demokratischen Spektrums,neue Strömungen an den Rändern des demokratischen Spektrums,8,59,elaborated,1,2025,male,West Germany,4
+gles_mip_v1_0377,6925,6925,pre020s,Bessere hilfe für deutschland,Bessere hilfe für deutschland,4,29,short_phrase,1,2025,female,West Germany,6
+gles_mip_v1_0378,2110,2110,pre020s,Immigration,Immigration,1,11,single_word,31,2025,male,East Germany,11 right
+gles_mip_v1_0379,8309,8309,pre020s,Chaos in der Energiepolitik,Chaos in der Energiepolitik,4,27,short_phrase,1,2025,male,West Germany,7
+gles_mip_v1_0380,4261,4261,pre020s,weiß nicht,weiß nicht,2,10,short_phrase,10,2025,male,West Germany,6
+gles_mip_v1_0381,936,936,pre020s,Wirtschaft,Wirtschaft,1,10,single_word,1133,2025,male,West Germany,6
+gles_mip_v1_0382,6426,6426,pre020s,"die Armut, die straffälligen Ausländer","die Armut, die straffälligen Ausländer",5,38,elaborated,1,2025,female,East Germany,3
+gles_mip_v1_0383,1208,1208,pre020s,"Die Politiker reden viel, machen aber nichts","Die Politiker reden viel, machen aber nichts",7,44,elaborated,1,2025,female,West Germany,6
+gles_mip_v1_0384,3837,3837,pre020s,Wirtschaftliche Lage,Wirtschaftliche Lage,2,20,short_phrase,99,2025,female,West Germany,3
+gles_mip_v1_0385,4871,4871,pre020s,keine Ahnung,keine Ahnung,2,12,short_phrase,6,2025,female,West Germany,No answer
+gles_mip_v1_0386,8324,8324,pre020s,Die ganze Politik ist das Problem,Die ganze Politik ist das Problem,6,33,elaborated,1,2025,female,West Germany,9
+gles_mip_v1_0387,7331,7331,pre020s,Schere zwischen Arm und Reich,Schere zwischen Arm und Reich,5,29,elaborated,4,2025,male,West Germany,6
+gles_mip_v1_0388,1415,1415,pre020s,Steuern runter,Steuern runter,2,14,short_phrase,1,2025,male,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0389,8909,8909,pre020s,Steuerbelastung,Steuerbelastung,1,15,single_word,2,2025,female,West Germany,8
+gles_mip_v1_0390,2516,2516,pre020s,Die soziale Marktwirtschaft (Gefahr der  Abschaffung ),Die soziale Marktwirtschaft (Gefahr der Abschaffung ),6,53,elaborated,1,2025,male,West Germany,4
+gles_mip_v1_0391,1404,1404,pre020s,Verhandlungen mit Tramp,Verhandlungen mit Tramp,3,23,short_phrase,1,2025,male,West Germany,5
+gles_mip_v1_0392,6222,6222,pre020s,Klimawandel,Klimawandel,1,11,single_word,89,2025,male,West Germany,5
+gles_mip_v1_0393,2805,2805,pre020s,Erstarken der rechten UNDEMOKRATISCHEN Partei AfD,Erstarken der rechten UNDEMOKRATISCHEN Partei AfD,6,49,elaborated,1,2025,female,West Germany,3
+gles_mip_v1_0394,4460,4460,pre020s,Hohe Belastungen / Abgaben,Hohe Belastungen / Abgaben,3,26,short_phrase,1,2025,male,East Germany,5
+gles_mip_v1_0395,8427,8427,pre020s,Hohe Lebenshaltungskosten,Hohe Lebenshaltungskosten,2,25,short_phrase,3,2025,female,West Germany,11 right
+gles_mip_v1_0396,2201,2201,pre020s,"Keine würdige Demokratie , nur Hass und Hetze","Keine würdige Demokratie , nur Hass und Hetze",7,45,elaborated,1,2025,male,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0397,2705,2705,pre020s,Inflation,Inflation,1,9,single_word,136,2025,female,East Germany,6
+gles_mip_v1_0398,5320,5320,pre020s,"Angst vor Rechtsruck, aufgrund der Aufruhr gegenüber Der Migrationspolitik","Angst vor Rechtsruck, aufgrund der Aufruhr gegenüber Der Migrationspolitik",9,74,elaborated,1,2025,male,Unit nonresponse,Unit nonresponse
+gles_mip_v1_0399,1481,1481,pre020s,Die Unehrlichkeit,Die Unehrlichkeit,2,17,short_phrase,1,2025,female,West Germany,11 right
+gles_mip_v1_0400,6696,6696,pre020s,Asylpolitik,Asylpolitik,1,11,single_word,143,2025,male,East Germany,6
