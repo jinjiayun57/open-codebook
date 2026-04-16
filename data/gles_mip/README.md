@@ -1,7 +1,7 @@
-# GLES Stance Ambiguity Pilot Data
+# GLES MIP Pilot Data
 
-This folder contains data documentation for the first stance and ambiguity pilot built on top of OpenCodebook.
-The pilot uses GLES material to support an early-stage study of interpretable coding, ambiguity, and stance in open-ended political responses. The repository keeps the data structure explicit so that raw source files, derived working files, and future study outputs remain easy to distinguish.
+This folder contains data documentation for the GLES most-important-problem (MIP) pilot built on top of OpenCodebook.
+The pilot uses GLES material to support an early-stage study of interpretable coding, issue domains, framing, ambiguity, and reliability in open-ended political problem responses. The repository keeps the data structure explicit so that raw source files, derived working files, and future study outputs remain easy to distinguish.
 
 ## Provenance
 
@@ -21,7 +21,7 @@ This folder is intended to document how those files are used inside the OpenCode
   Main survey file with English labels and metadata, used for linking, inspection, and interpretation.
 
 - `interim/gles_mip_sample.csv`
-  Working pilot sample derived from the raw files for annotation and reliability analysis.
+  Working pilot sample derived from `pre020s`, the pre-election most-important-political-problem response field, for annotation and reliability analysis.
 
 ## Citation and attribution
 
@@ -41,4 +41,4 @@ Access category:
 
 For reproducibility, raw files in `raw/` should be treated as source inputs and should not be edited in place. Any cleaning, sampling, harmonization, or analysis-ready subsets should be written as derived files under `interim/`.
 
-This separation supports transparent study setup and makes it easier to trace how the stance/ambiguity pilot sample was constructed from the original GLES materials.
+This separation supports transparent study setup and makes it easier to trace how the GLES MIP pilot sample was constructed from the original GLES materials.

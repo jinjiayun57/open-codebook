@@ -1,0 +1,10 @@
+study_name: gles_mip_v1
+codebook_path: codebooks/gles_mip/codebook_v1.yaml
+data_path: data/gles_mip/interim/gles_mip_sample.csv
+text_column: response_text
+id_column: sample_id
+output_dir: outputs/gles_mip/
+model: qwen3.5:4b
+language: de
+codebook_language: en
+task_instruction: "Code the input response according to the codebook definitions and allowed labels."

@@ -1,4 +1,4 @@
-project_name: gles_stance_ambiguity_pilot
+project_name: gles_mip_legacy_stance_codebook
 text_column: response_text
 model_name: qwen3.5:4b
 prompt_preamble: >

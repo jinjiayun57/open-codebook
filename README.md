@@ -12,7 +12,7 @@ The repository now has two connected layers:
 At this stage, the repo includes:
 
 - a compact end-to-end demo
-- a first research pilot on stance, ambiguity, and interpretive coding using GLES open-ended responses
+- a first research pilot on coding GLES most-important-political-problem responses
 
 ## Why this project?
 
@@ -51,16 +51,16 @@ The repository is now organized so that the engine, a runnable demo, and study-s
 ```text
 codebooks/
   demos/              Demo codebooks
-  stance_ambiguity/   Study-specific codebooks
+  gles_mip/           GLES most-important-problem codebooks
 data/
   demos/              Demo input data
-  stance_ambiguity/   Study-specific raw and interim data
+  gles_mip/           GLES most-important-problem raw and interim data
 notebooks/
   demos/              Demo notebooks
-  stance_ambiguity/   Study notebooks
+  gles_mip/           GLES MIP study notebooks
 outputs/
   demos/              Demo outputs
-  stance_ambiguity/   Study outputs
+  gles_mip/           GLES MIP study outputs
 studies/              High-level study notes and research framing
 src/open_codebook/    Core Python modules for coding workflow
 ```
@@ -98,17 +98,17 @@ Running the demo writes:
 - `outputs/demos/coded_demo.csv`
 - `outputs/demos/run_metadata.json`
 
-### First research study: stance and ambiguity pilot
+### First research study: GLES MIP pilot
 
-The first serious study inside this repository is a GLES-based pilot on stance, ambiguity, and interpretive coding of open-ended responses.
+The first serious study inside this repository is a GLES-based pilot on coding open-ended responses to the most-important-political-problem question. The study focuses on issue domain, specificity, framing, ambiguity, and reliability rather than forcing stance labels onto short issue mentions.
 
 Study materials live under:
 
-- `codebooks/stance_ambiguity/`
-- `data/stance_ambiguity/`
-- `notebooks/stance_ambiguity/`
-- `outputs/stance_ambiguity/`
-- `studies/stance_ambiguity_pilot/`
+- `codebooks/gles_mip/`
+- `data/gles_mip/`
+- `notebooks/gles_mip/`
+- `outputs/gles_mip/`
+- `studies/gles_mip_pilot/`
 
 ## Demo workflow
 
@@ -145,22 +145,22 @@ If the run succeeds, it writes:
 - Sends each row to a local Ollama model for structured coding
 - Saves row-level coding results and run-level metadata
 
-## Stance and ambiguity pilot
+## GLES MIP pilot
 
-The stance and ambiguity pilot is not yet a full runnable study. At this stage, the repository includes:
+The GLES MIP pilot is not yet a full runnable coding study. At this stage, the repository includes:
 
-- a dedicated study folder under `studies/stance_ambiguity_pilot/`
-- a study-specific codebook draft under `codebooks/stance_ambiguity/`
-- placeholder notebook locations for data inspection, sampling, and reliability work
+- a dedicated study folder under `studies/gles_mip_pilot/`
+- a study-specific codebook under `codebooks/gles_mip/`
+- notebooks for data inspection, sampling, and future reliability work
 - a future workflow stub in `src/open_codebook/run_study.py`
 
-The raw GLES source files are present under `data/stance_ambiguity/raw/`. The study remains early-stage, and the derived interim sample plus analysis outputs still need to be created.
+The raw GLES source files are present under `data/gles_mip/raw/`. A first derived pilot sample is stored under `data/gles_mip/interim/`.
 
 ## Current limitations
 
 - The current demo depends on a local Ollama setup and will not run unless Ollama is installed and active.
 - The coding schema is now derived from the YAML codebook, but the repo remains an early prototype rather than a fully configurable research tool.
-- The stance and ambiguity pilot is still at the scaffolding stage and does not yet include the derived interim sample or finished reliability analysis.
+- The GLES MIP pilot is still at the scaffolding stage and does not yet include finished coding outputs or reliability analysis.
 - The repository is intended to demonstrate workflow direction and study organization rather than a finished research platform.
 
 ## Possible use cases
