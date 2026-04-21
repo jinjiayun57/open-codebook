@@ -39,6 +39,8 @@ OpenCodebook is motivated by a simple question:
 3. Build a structured output schema from the codebook
 4. Generate structured coding outputs with a local Ollama model
 5. Save coded results together with run-level metadata
+6. Prepare a researcher review sample and adjudication template
+7. Compare model outputs against reviewed codes with agreement summaries
 
 ## Current status
 
@@ -71,8 +73,12 @@ Current core modules include:
 - `io_utils.py`: shared path helpers and file utilities
 - `coder.py`: coding logic and structured output generation
 - `run_demo.py`: minimal demo pipeline
-- `reliability.py`: placeholder module for agreement and disagreement analysis
-- `run_study.py`: placeholder study runner for future non-demo workflows
+- `run_study.py`: config-driven study runner for non-demo workflows
+- `review.py`: review-sample construction and adjudication-template export
+- `run_review_prep.py`: CLI entry point for review preparation
+- `agreement.py`: model-vs-review agreement summaries and disagreement exports
+- `run_agreement.py`: CLI entry point for agreement analysis
+- `reliability.py`: reserved for future human-vs-human reliability analysis
 
 ## Engine, demo, and study
 
@@ -84,6 +90,8 @@ The engine lives in `src/open_codebook/` and remains the core of the repository.
 - building structured output schemas
 - calling a local model through Ollama
 - writing row-level outputs and run metadata
+- preparing review samples for researcher adjudication
+- summarizing agreement and disagreement between model output and researcher review
 
 ### Demo workflow
 
@@ -109,6 +117,14 @@ Study materials live under:
 - `notebooks/gles_mip/`
 - `outputs/gles_mip/`
 - `studies/gles_mip_pilot/`
+
+The active GLES pilot codebook is:
+
+- `codebooks/gles_mip/codebook_v1.yaml`
+
+An older stance-oriented draft is kept for reference under:
+
+- `codebooks/gles_mip/archive/gles_mip_codebook.yaml`
 
 ## Demo workflow
 
@@ -147,20 +163,24 @@ If the run succeeds, it writes:
 
 ## GLES MIP pilot
 
-The GLES MIP pilot is not yet a full runnable coding study. At this stage, the repository includes:
+The GLES MIP pilot now has a runnable study workflow plus a first completed model-coded pilot sample. The repository currently includes:
 
 - a dedicated study folder under `studies/gles_mip_pilot/`
-- a study-specific codebook under `codebooks/gles_mip/`
-- notebooks for data inspection, sampling, and future reliability work
-- a future workflow stub in `src/open_codebook/run_study.py`
+- a study-specific issue-domain codebook under `codebooks/gles_mip/`
+- a config-driven study runner in `src/open_codebook/run_study.py`
+- a completed pilot coding output in `outputs/gles_mip/gles_mip_v1_coded.csv`
+- a review template in `outputs/gles_mip/gles_mip_v1_review_template.csv`
+- agreement outputs in `outputs/gles_mip/agreement_summary.csv` and `outputs/gles_mip/agreement_disagreements.csv`
+- notebooks for data inspection, sampling, and follow-up analysis
 
-The raw GLES source files are present under `data/gles_mip/raw/`. A first derived pilot sample is stored under `data/gles_mip/interim/`.
+The raw GLES source files are present under `data/gles_mip/raw/`. The pilot sample used for the first study run is stored under `data/gles_mip/interim/`.
 
 ## Current limitations
 
 - The current demo depends on a local Ollama setup and will not run unless Ollama is installed and active.
 - The coding schema is now derived from the YAML codebook, but the repo remains an early prototype rather than a fully configurable research tool.
-- The GLES MIP pilot is still at the scaffolding stage and does not yet include finished coding outputs or reliability analysis.
+- The current agreement workflow compares model outputs against researcher review, but it does not yet implement fuller validation utilities, reviewer-assignment workflows, or human-vs-human reliability analysis.
+- The GLES MIP pilot now includes coded outputs and first-pass agreement results, but the codebook and review protocol are still being refined in response to disagreement patterns.
 - The repository is intended to demonstrate workflow direction and study organization rather than a finished research platform.
 
 ## Possible use cases

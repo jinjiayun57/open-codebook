@@ -6,7 +6,9 @@ The focus is on coding open-ended GLES responses to the most-important-political
 
 At this stage, the pilot includes:
 
-- a study-specific issue/framing codebook
+- a study-specific issue-domain codebook
 - a reserved data structure for raw and interim GLES files
-- notebooks for inspection, sampling, and future reliability work
-- future workflow stubs in the engine layer
+- a runnable study configuration under `studies/gles_mip_pilot/config.yaml`
+- a first model-coded pilot output under `outputs/gles_mip/gles_mip_v1_coded.csv`
+- a review template and agreement outputs under `outputs/gles_mip/`
+- notebooks for inspection, sampling, and follow-up analysis
