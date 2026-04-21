@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import csv
 from pathlib import Path
 
 import pandas as pd
@@ -16,7 +17,17 @@ def load_codebook(codebook_path: Path) -> dict:
 
 
 def load_csv(data_path: Path) -> pd.DataFrame:
-    return pd.read_csv(data_path)
+    with data_path.open("r", encoding="utf-8", newline="") as file_obj:
+        sample = file_obj.read(4096)
+        file_obj.seek(0)
+
+        try:
+            dialect = csv.Sniffer().sniff(sample, delimiters=",;")
+            delimiter = dialect.delimiter
+        except csv.Error:
+            delimiter = ","
+
+    return pd.read_csv(data_path, sep=delimiter)
 
 
 def ensure_output_dir(output_dir: Path) -> None:
