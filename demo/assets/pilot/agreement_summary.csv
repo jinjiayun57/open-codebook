@@ -1,0 +1,6 @@
+variable,measurement_level,agreement_metric,n_compared,n_matches,percent_agreement,kappa,model_distribution,reviewed_distribution,note
+issue_domain,nominal,cohen_kappa,95,60,0.6316,0.5678,climate_environment=3; democracy_governance=21; economy=8; foreign_policy_war=5; migration=13; other=15; security=12; social_welfare=16; unclear=2,climate_environment=3; democracy_governance=35; economy=13; foreign_policy_war=5; migration=17; security=4; social_welfare=11; unclear=7,
+specificity,ordinal,weighted_kappa,95,51,0.5368,0.3101,actor_reference=3; framed_claim=19; label_only=73,actor_reference=10; framed_claim=41; label_only=35; named_policy=9,
+framing,nominal,cohen_kappa,95,56,0.5895,0.3456,descriptive=55; directive=4; evaluative=36,descriptive=29; directive=19; evaluative=47,
+ambiguity,ordinal,weighted_kappa,95,40,0.4211,0.2657,high=36; low=47; medium=12,high=10; low=36; medium=49,
+multi_issue,nominal,cohen_kappa,95,89,0.9368,0.8649,False=57; True=38,False=63; True=32,
