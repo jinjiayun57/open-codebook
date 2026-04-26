@@ -1,0 +1,16 @@
+{
+  "id_column": "sample_id",
+  "ordinal_fields": [
+    "ambiguity",
+    "specificity"
+  ],
+  "n_review_rows": 95,
+  "n_variables": 5,
+  "reviewed_row_counts": {
+    "issue_domain": 95,
+    "specificity": 95,
+    "framing": 95,
+    "ambiguity": 95,
+    "multi_issue": 95
+  }
+}

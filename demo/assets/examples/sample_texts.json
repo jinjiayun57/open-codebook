@@ -1,0 +1,114 @@
+[
+  {
+    "id": "ex_mip_de_01",
+    "text": "Inflation macht alles unbezahlbar.",
+    "language": "de",
+    "fits_codebook": ["gles_mip_v1"],
+    "note": "Short evaluative claim about cost of living."
+  },
+  {
+    "id": "ex_mip_de_02",
+    "text": "Zu viele Flüchtlinge kommen ins Land.",
+    "language": "de",
+    "fits_codebook": ["gles_mip_v1"],
+    "note": "Evaluative migration response."
+  },
+  {
+    "id": "ex_mip_de_03",
+    "text": "Klimawandel",
+    "language": "de",
+    "fits_codebook": ["gles_mip_v1"],
+    "note": "Minimal one-word issue label."
+  },
+  {
+    "id": "ex_mip_de_04",
+    "text": "Die Renten müssen steigen und die Pflege braucht mehr Geld.",
+    "language": "de",
+    "fits_codebook": ["gles_mip_v1"],
+    "note": "Multi-issue directive claim about welfare."
+  },
+  {
+    "id": "ex_mip_de_05",
+    "text": "Einigkeit der Gesellschaft",
+    "language": "de",
+    "fits_codebook": ["gles_mip_v1"],
+    "note": "Abstract phrase — expected to trigger high ambiguity."
+  },
+  {
+    "id": "ex_mip_de_06",
+    "text": "Bildung",
+    "language": "de",
+    "fits_codebook": ["gles_mip_v1"],
+    "note": "Bare education label."
+  },
+  {
+    "id": "ex_mip_de_07",
+    "text": "Trump",
+    "language": "de",
+    "fits_codebook": ["gles_mip_v1"],
+    "note": "Actor reference without further content."
+  },
+  {
+    "id": "ex_mip_de_08",
+    "text": "Die AFD muss abgeschafft werden.",
+    "language": "de",
+    "fits_codebook": ["gles_mip_v1"],
+    "note": "Actor-targeted directive response."
+  },
+  {
+    "id": "ex_mip_en_01",
+    "text": "Cost of living is out of control and the government is doing nothing about it.",
+    "language": "en",
+    "fits_codebook": ["gles_mip_v1"],
+    "note": "English economy response with evaluative framing."
+  },
+  {
+    "id": "ex_mip_en_02",
+    "text": "Our schools are underfunded and overcrowded.",
+    "language": "en",
+    "fits_codebook": ["gles_mip_v1"],
+    "note": "Education framed claim."
+  },
+  {
+    "id": "ex_demo_en_01",
+    "text": "I think the new policy is mostly fine, though I do wonder about long-term consequences.",
+    "language": "en",
+    "fits_codebook": ["demo_codebook"],
+    "note": "Hedged, softly supportive — tests indirectness."
+  },
+  {
+    "id": "ex_demo_en_02",
+    "text": "Some of my neighbours have concerns, but I personally try to see both sides.",
+    "language": "en",
+    "fits_codebook": ["demo_codebook"],
+    "note": "Socially cautious phrasing, mixed position."
+  },
+  {
+    "id": "ex_demo_en_03",
+    "text": "This is absolutely the wrong direction and it has to stop.",
+    "language": "en",
+    "fits_codebook": ["demo_codebook"],
+    "note": "Strong critical position with low indirectness."
+  },
+  {
+    "id": "ex_demo_en_04",
+    "text": "It's complicated. On one hand yes, on the other hand not really.",
+    "language": "en",
+    "fits_codebook": ["demo_codebook"],
+    "note": "Highly indirect, explicitly mixed position."
+  },
+  {
+    "id": "ex_demo_en_05",
+    "text": "I support the general idea, but some implementation details worry me.",
+    "language": "en",
+    "fits_codebook": ["demo_codebook"],
+    "note": "Supportive with reservations."
+  },
+  {
+    "id": "ex_demo_en_06",
+    "text": "Honestly, I haven't thought about it much one way or the other.",
+    "language": "en",
+    "fits_codebook": ["demo_codebook"],
+    "note": "Low-information response — expected ambiguity_flag."
+  }
+]
