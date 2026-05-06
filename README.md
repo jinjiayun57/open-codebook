@@ -80,7 +80,7 @@ Current core modules include:
 - `run_agreement.py`: CLI entry point for agreement analysis
 - `reliability.py`: reserved for future human-vs-human reliability analysis
 
-## Engine, demo, and study
+## Engine, demos, and study
 
 ### OpenCodebook as engine
 
@@ -93,9 +93,11 @@ The engine lives in `src/open_codebook/` and remains the core of the repository.
 - preparing review samples for researcher adjudication
 - summarizing agreement and disagreement between model output and researcher review
 
-### Demo workflow
+### Local engine demo
 
-The demo remains the smallest runnable example in the repository. Its assets now live under:
+The local engine demo is the smallest batch workflow for the core package. It
+uses the reusable modules in `src/open_codebook/`, calls a local Ollama model,
+and writes reproducible CSV/JSON artifacts. Its assets live under:
 
 - `codebooks/demos/demo_codebook.yaml`
 - `data/demos/demo_responses.csv`
@@ -105,6 +107,21 @@ Running the demo writes:
 
 - `outputs/demos/coded_demo.csv`
 - `outputs/demos/run_metadata.json`
+
+### Hosted Gradio companion
+
+The `demo/` directory is a self-contained Gradio app intended for Hugging Face
+Spaces. It is a public-facing companion to the project rather than the primary
+local workflow. It uses the Hugging Face serverless Inference API, includes the
+GLES pilot agreement summaries, and lets visitors try built-in or uploaded YAML
+codebooks in a browser.
+
+The hosted companion is deliberately limited: rate limits, model availability,
+and serverless behaviour can differ from the local Ollama workflow. Its
+deployment notes live in:
+
+- `demo/README.md`
+- `demo/DEPLOY.md`
 
 ### First research study: GLES MIP pilot
 
@@ -118,23 +135,24 @@ Study materials live under:
 - `outputs/gles_mip/`
 - `studies/gles_mip_pilot/`
 
-The active GLES pilot codebook is:
+The GLES pilot codebooks are:
 
-- `codebooks/gles_mip/codebook_v1.yaml`
+- `codebooks/gles_mip/codebook_v1.yaml`: original pilot codebook used for the first 95-row agreement pass
+- `codebooks/gles_mip/codebook_v2.yaml`: revised draft informed by the v1 disagreement diagnosis
 
 An older stance-oriented draft is kept for reference under:
 
 - `codebooks/gles_mip/archive/gles_mip_codebook.yaml`
 
-## Demo workflow
+## Local engine demo
 
-The repository currently includes a small demo workflow based on:
+The repository includes a small local demo workflow based on:
 - `codebooks/demos/demo_codebook.yaml`
 - `data/demos/demo_responses.csv`
 
 This demo illustrates how a researcher-defined codebook and a small text dataset can be connected in a modular Python workflow, where output field definitions are derived from the YAML codebook and used for structured coding and review.
 
-## Run the demo
+## Run the local demo
 
 From the project root:
 
@@ -146,20 +164,35 @@ ollama pull qwen3.5:4b
 PYTHONPATH=src python3 -m open_codebook.run_demo
 ```
 
-This repository uses a `src/` layout, so the demo is run as a module rather than as a standalone script. Ollama must be installed and running locally before you start the demo.
+This repository uses a `src/` layout, so the local demo is run as a module rather than as a standalone script. Ollama must be installed and running locally before you start the demo.
 
 If the run succeeds, it writes:
 
 - `outputs/demos/coded_demo.csv`
 - `outputs/demos/run_metadata.json`
 
-## What the demo currently does
+## What the local demo currently does
 
 - Loads `codebooks/demos/demo_codebook.yaml`
 - Reads `data/demos/demo_responses.csv`
 - Uses `text_en` as the input text column
 - Sends each row to a local Ollama model for structured coding
 - Saves row-level coding results and run-level metadata
+
+## Run the hosted companion locally
+
+The browser demo under `demo/` is separate from the local engine workflow. To
+run it from the project root:
+
+```bash
+cd demo
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+HF_TOKEN=your_hugging_face_token python3 app.py
+```
+
+For deployment to Hugging Face Spaces, see `demo/DEPLOY.md`.
 
 ## GLES MIP pilot
 
@@ -177,7 +210,8 @@ The raw GLES source files are present under `data/gles_mip/raw/`. The pilot samp
 
 ## Current limitations
 
-- The current demo depends on a local Ollama setup and will not run unless Ollama is installed and active.
+- The local engine demo depends on a local Ollama setup and will not run unless Ollama is installed and active.
+- The hosted Gradio companion uses the Hugging Face serverless Inference API and may be affected by rate limits, model availability, cold starts, and provider-side behaviour.
 - The coding schema is now derived from the YAML codebook, but the repo remains an early prototype rather than a fully configurable research tool.
 - The current agreement workflow compares model outputs against researcher review, but it does not yet implement fuller validation utilities, reviewer-assignment workflows, or human-vs-human reliability analysis.
 - The GLES MIP pilot now includes coded outputs and first-pass agreement results, but the codebook and review protocol are still being refined in response to disagreement patterns.

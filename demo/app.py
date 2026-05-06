@@ -55,10 +55,11 @@ _patch_gradio_client_bool_schema()
 ASSETS = Path(__file__).resolve().parent / "assets"
 
 BUILTIN_CODEBOOKS: dict[str, Path] = {
+    "GLES MIP pilot (codebook_v2)": ASSETS / "codebooks" / "gles_mip_v2.yaml",
     "GLES MIP pilot (codebook_v1)": ASSETS / "codebooks" / "gles_mip_v1.yaml",
     "Demo codebook": ASSETS / "codebooks" / "demo_codebook.yaml",
 }
-DEFAULT_CODEBOOK_LABEL = "GLES MIP pilot (codebook_v1)"
+DEFAULT_CODEBOOK_LABEL = "GLES MIP pilot (codebook_v2)"
 
 LOADED_CODEBOOKS: dict[str, dict] = {
     label: load_codebook(path) for label, path in BUILTIN_CODEBOOKS.items()

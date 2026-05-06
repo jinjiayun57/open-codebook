@@ -41,6 +41,15 @@ def _format_guidance_items(items: list[dict]) -> list[str]:
     return lines
 
 
+def _format_text_items(title: str, items: list[str]) -> list[str]:
+    if not items:
+        return []
+
+    lines = [f"  {title}:"]
+    lines.extend(f"    - {item}" for item in items)
+    return lines
+
+
 def build_prompt(codebook: dict, text: str, config: dict | None = None) -> str:
     config = config or {}
     codes = get_coded_fields(codebook)
@@ -78,6 +87,12 @@ def build_prompt(codebook: dict, text: str, config: dict | None = None) -> str:
     for code in codes:
         prompt_lines.append(
             f"- {code['name']} = {code.get('description', 'No description provided.')}"
+        )
+        prompt_lines.extend(
+            _format_text_items("Coding procedure", code.get("coding_procedure", []))
+        )
+        prompt_lines.extend(
+            _format_text_items("Tie-breakers", code.get("tie_breakers", []))
         )
 
         guidance_items = code.get("categories", code.get("levels", []))

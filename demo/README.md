@@ -5,6 +5,7 @@ colorFrom: indigo
 colorTo: pink
 sdk: gradio
 sdk_version: 4.44.1
+python_version: "3.10"
 app_file: app.py
 pinned: false
 license: mit
@@ -23,7 +24,9 @@ YAML codebook.
 
 - **Try it** — type or paste a short response, pick a codebook, and see the
   structured coding output (issue domain, specificity, framing, ambiguity,
-  multi-issue flag, plus a derived review flag).
+  multi-issue flag, plus a derived review flag). The default GLES codebook is
+  the revised v2 draft, while the v1 pilot codebook remains available for
+  comparison.
 - **Examples** — a small public gallery of short texts you can load with one
   click.
 - **Pilot results** — summary of the GLES MIP pilot: agreement between the
