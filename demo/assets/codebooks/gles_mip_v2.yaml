@@ -1,0 +1,260 @@
+codebook_name: gles_mip_v2
+version: "2.0"
+description: "Revised codebook for coding open-ended 'most important problem' responses from GLES 2025"
+language: de
+source_dataset: "GLES Rolling Cross-Section 2025 (ZA10101, v3.0.0)"
+source_question: "In your opinion, what is the most important problem facing Germany today?"
+coding_principle: "issue_domain is always the primary substantive label. The other dimensions describe how that domain is expressed. Apply variable-level coding_procedure and tie_breakers before choosing a final label."
+text_column: response_text
+model_name: qwen3.5:4b
+
+codes:
+  - name: issue_domain
+    description: Primary substantive issue domain mentioned in the response.
+    required: true
+    multi_label: false
+    values:
+      - economy
+      - migration
+      - social_welfare
+      - security
+      - climate_environment
+      - education
+      - democracy_governance
+      - foreign_policy_war
+      - other
+      - unclear
+    coding_procedure:
+      - "Identify the primary issue domain named or implied by the response."
+      - "If the response's overarching complaint is about political actors, parties, institutions, leadership, accountability, unity, or how politics is conducted, assign democracy_governance even if substantive policy nouns also appear."
+      - "Use other only for substantive issues that genuinely fall outside the listed domains."
+      - "Use unclear only when the issue domain cannot be determined from the response."
+    tie_breakers:
+      - "Governance-frame complaints dominate embedded substantive policy mentions."
+      - "Abstract complaints about political unity, lack of direction, political priorities, or the political class belong to democracy_governance, not other."
+      - "When a response combines a policy problem with explicit blame toward political actors, code the primary domain as democracy_governance if blame/accountability is the main point."
+    categories:
+      - value: economy
+        definition: Economic conditions, labor, taxation, inflation, or cost of living.
+        examples:
+          - Wirtschaft
+          - Konjunktur
+          - Arbeitsmarkt
+          - Steuern
+          - Inflation
+          - Lebenshaltungskosten
+      - value: migration
+        definition: Migration, immigration, asylum, refugees, or related integration issues.
+        examples:
+          - Migration
+          - Zuwanderung
+          - Einwanderung
+          - Asylpolitik
+          - Flüchtlinge
+      - value: social_welfare
+        definition: Welfare state, pensions, care, health care, or social justice.
+        examples:
+          - Rente
+          - Sozialstaat
+          - Pflege
+          - Gesundheitswesen
+          - soziale Gerechtigkeit
+      - value: security
+        definition: Internal security, crime, defense, or public safety.
+        examples:
+          - Innere Sicherheit
+          - Kriminalität
+          - Verteidigung
+      - value: climate_environment
+        definition: Climate change, environmental protection, or energy transition.
+        examples:
+          - Klimawandel
+          - Umwelt
+          - Energiewende
+      - value: education
+        definition: Education, schools, childcare, or related learning institutions.
+        examples:
+          - Bildung
+          - Schulsystem
+          - Kinderbetreuung
+      - value: democracy_governance
+        definition: Democracy, bureaucracy, parties, institutions, the political system, political leadership, accountability, political unity, or complaints about how politics is conducted.
+        examples:
+          - Demokratie
+          - Bürokratie
+          - Parteien
+          - politisches System
+          - Uneinigkeit
+          - Keine klare Linie der Ziele
+          - Politiker versprechen Sachen und halten sie nicht ein
+      - value: foreign_policy_war
+        definition: Foreign policy, international conflict, war, or foreign political actors.
+        examples:
+          - Ukraine
+          - Russland
+          - Außenpolitik
+          - Trump
+      - value: other
+        definition: A substantive political issue that genuinely does not fit the listed domains; do not use for abstract governance or political-process complaints.
+        examples: []
+      - value: unclear
+        definition: The issue domain cannot be determined from the response.
+        examples: []
+
+  - name: specificity
+    description: Degree and type of specificity in how the issue is expressed.
+    required: true
+    multi_label: false
+    values:
+      - label_only
+      - named_policy
+      - framed_claim
+      - actor_reference
+    coding_procedure:
+      - "If the response names an actor, party, institution, or social group as the subject of the problem, assign actor_reference."
+      - "Else, if the response names a policy area or institutional domain, including German compound nouns such as Asylpolitik, Energiepolitik, Innere Sicherheit, Sozialleistungen, or Förderung der eigenen Wirtschaft, assign named_policy."
+      - "Else, if the response makes an evaluative claim beyond naming a topic, including a short clause asserting that something is wrong, missing, unclear, unfair, or going in the wrong direction, assign framed_claim."
+      - "Else, assign label_only."
+    tie_breakers:
+      - "Actor or party naming takes precedence over policy-domain specificity."
+      - "Policy compounds and named institutional domains take precedence over label_only."
+      - "Reserve label_only for bare topic nouns or generic noun phrases without modifiers, claims, actors, or policy compounds."
+    levels:
+      - value: label_only
+        definition: Bare topic noun or short generic label without modifiers, claims, actors, or policy compounds.
+        examples:
+          - "Migration"
+          - "Wirtschaft"
+      - value: named_policy
+        definition: Response names a specific policy area or institutional domain, including German compound nouns and short policy-area phrases.
+        examples:
+          - "Asylpolitik"
+          - "Energiepolitik"
+          - "Innere Sicherheit"
+          - "Förderung der eigenen Wirtschaft"
+          - "Problem der gerechten Verteilung von Sozialleistungen"
+      - value: framed_claim
+        definition: Response makes a concrete evaluative claim or complaint beyond naming a topic.
+        examples:
+          - "unbezahlbare Mieten"
+          - "zu viel kriminelle Ausländer"
+          - "Was wird aus der eigenen Bevölkerung"
+          - "Das die sich nicht einig sind"
+      - value: actor_reference
+        definition: Response achieves specificity mainly by naming an actor, party, institution, or social group.
+        examples:
+          - "Die AFD muss abgeschafft werden"
+          - "Donald Trump"
+          - "Bei allen Parteien unfähige, egomanische Dummköpfe"
+          - "Die Grünen haben unsere Wirtschaft an die Wand gefahren"
+
+  - name: framing
+    description: How the response frames the named issue.
+    required: true
+    multi_label: false
+    values:
+      - descriptive
+      - evaluative
+      - directive
+    coding_procedure:
+      - "First check directive: assign directive if the response demands action, uses an imperative or demand verb, attributes blame to named actors or parties, or uses a nominalised demand such as Schaffung, Förderung, Ausweisung, Abschaffung, or Aufhebung plus an object."
+      - "Else check evaluative: assign evaluative if the response implies something is wrong, failing, unfair, dangerous, missing, unclear, or going in the wrong direction."
+      - "Else assign descriptive only when the response is a neutral issue mention without blame, demand, or evaluative loading."
+    tie_breakers:
+      - "directive takes precedence over evaluative."
+      - "evaluative takes precedence over descriptive."
+      - "German negative-loaded nouns such as Hetze, Uneinigkeit, Unstimmigkeiten, Diskriminierung, Inkompetenz, or Wirtschaftslage in a negative context count as evaluative, not descriptive."
+    levels:
+      - value: descriptive
+        definition: Neutral issue mention without evaluative direction.
+        examples:
+          - "Wirtschaft"
+          - "Klimawandel"
+      - value: evaluative
+        definition: Implies something is wrong, failing, unfair, dangerous, missing, unclear, or going in the wrong direction.
+        examples:
+          - "Wirtschaftskrise"
+          - "unbezahlbare Mieten"
+          - "Unstimmigkeiten"
+          - "Die Hetze"
+          - "Diskriminierung von deutschen"
+      - value: directive
+        definition: Demands action, assigns blame, names a responsible actor, or expresses a nominalised demand.
+        examples:
+          - "Ausländer abschieben"
+          - "nur Versager in den Ämtern"
+          - "Die Schaffung eines einheitlichen Kurses"
+          - "Förderung der eigenen Wirtschaft"
+          - "Die Grünen haben unsere Wirtschaft an die Wand gefahren"
+
+  - name: ambiguity
+    description: Coder uncertainty about how to assign the other coded variables, not just topical abstractness.
+    required: true
+    multi_label: false
+    values:
+      - low
+      - medium
+      - high
+    coding_procedure:
+      - "Assess ambiguity after assigning the other variables."
+      - "Use low when the domain, specificity, framing, and multi_issue judgment are all straightforward."
+      - "Use medium when one dimension requires interpretation, when a response lists two or more unrelated issue domains without a clear primary domain, or when reasonable coders might choose between nearby labels."
+      - "Use high only when multiple dimensions are uncertain or the response is too underspecified to support confident coding."
+    tie_breakers:
+      - "Short abstract responses are not automatically high ambiguity if they clearly map to one issue domain and framing."
+      - "Multi-topic lists with no dominant primary issue are at least medium ambiguity."
+      - "Do not use high merely because the response is short."
+    levels:
+      - value: low
+        definition: Coding is straightforward, most coders would agree.
+        examples:
+          - "Inflation"
+          - "Gewalt durch Flüchtlinge"
+      - value: medium
+        definition: Some interpretation is needed; reasonable coders might disagree on one dimension or on the primary issue in a multi-topic list.
+        examples:
+          - "Belange der deutschen Bevölkerung"
+          - "Energikosten Sicherheit Frieden und Wirtschaft"
+          - "Migration, Klima und Wirtschaft"
+          - "Die Uneinigkeit unter einander"
+      - value: high
+        definition: Substantial interpretation is needed because multiple coded dimensions are uncertain or the response is too underspecified to code confidently.
+        examples:
+          - "X"
+          - "alles"
+
+  - name: multi_issue
+    description: Whether the response mentions more than one distinct political issue.
+    required: true
+    multi_label: false
+    type: boolean
+    values:
+      - true
+      - false
+    coding_procedure:
+      - "Set true only when the response mentions two or more distinct issue domains."
+      - "Set false when the response gives synonyms, sub-aspects, or repeated framings of one domain."
+    tie_breakers:
+      - "Two clauses about the same domain do not count as multiple issues."
+      - "A policy area plus a demand about that same policy area counts as one issue."
+    examples:
+      true:
+        - "Ausländer, Löhne in Behinderten Werkstätten müssen steigen, mehr Geld für die Rentner"
+        - "Migration, Klima und Wirtschaft"
+      false:
+        - "Migration"
+        - "Flüchtlingspolitik bzw. Ausweisung krimineller Ausländer"
+        - "zunehmender Rassismus und Fremdenfeindlichkeit"
+
+derived_codes:
+  - name: review_flag
+    description: Computed after coding, not assigned by the coder.
+    coded_by_model: false
+    type: boolean
+    values:
+      - true
+      - false
+    set_to_true_if:
+      - ambiguity == "medium"
+      - ambiguity == "high"
+      - multi_issue == true

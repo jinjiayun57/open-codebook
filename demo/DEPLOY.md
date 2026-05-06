@@ -78,9 +78,9 @@ If you want GitHub as the source of truth, you can either:
 
 - Open the Space URL.
 - In **Try it**, paste `"Inflation macht alles unbezahlbar."` with
-  *GLES MIP pilot (codebook_v1)* selected and click **Code this text**.
+  *GLES MIP pilot (codebook_v2)* selected and click **Code this text**.
   Expect a structured output with `issue_domain: economy` and
-  `review_flag: false`.
+  a valid `review_flag` value.
 - In **Examples**, click any **Try this →**; the *Try it* tab should
   populate and activate.
 - In **Pilot results**, confirm the agreement table and the distribution
