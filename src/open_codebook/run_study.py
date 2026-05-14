@@ -46,6 +46,13 @@ def load_config(config_path: Path) -> dict:
     return config
 
 
+def build_study_output_paths(output_dir: Path, study_name: str) -> tuple[Path, Path]:
+    return (
+        output_dir / f"{study_name}_coded.csv",
+        output_dir / f"{study_name}_run_metadata.json",
+    )
+
+
 def run_study(config_path: Path) -> tuple[Path, Path]:
     project_root = get_project_root()
     config = load_config(config_path)
@@ -78,8 +85,10 @@ def run_study(config_path: Path) -> tuple[Path, Path]:
 
     coded_df = pd.DataFrame(coded_rows)
 
-    coded_output_path = output_dir / f"{config['study_name']}_coded.csv"
-    metadata_output_path = output_dir / "run_metadata.json"
+    coded_output_path, metadata_output_path = build_study_output_paths(
+        output_dir,
+        config["study_name"],
+    )
 
     coded_df.to_csv(coded_output_path, index=False)
 

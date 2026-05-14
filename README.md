@@ -203,7 +203,7 @@ The GLES MIP pilot now has a runnable study workflow plus a first completed mode
 - a config-driven study runner in `src/open_codebook/run_study.py`
 - a completed pilot coding output in `outputs/gles_mip/gles_mip_v1_coded.csv`
 - a review template in `outputs/gles_mip/gles_mip_v1_review_template.csv`
-- agreement outputs in `outputs/gles_mip/agreement_summary.csv` and `outputs/gles_mip/agreement_disagreements.csv`
+- agreement outputs under `outputs/gles_mip/`; new study runs use study-name-prefixed filenames such as `gles_mip_v1_agreement_summary.csv` and `gles_mip_v2_agreement_summary.csv`
 - notebooks for data inspection, sampling, and follow-up analysis
 
 The raw GLES source files are present under `data/gles_mip/raw/`. The pilot sample used for the first study run is stored under `data/gles_mip/interim/`.
