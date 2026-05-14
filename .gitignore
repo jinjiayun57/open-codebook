@@ -6,6 +6,7 @@ __pycache__/
 outputs/**/*.csv
 outputs/**/*.json
 .env
+.claude/
 
 !outputs/demos/
 !outputs/demos/coded_demo.csv
