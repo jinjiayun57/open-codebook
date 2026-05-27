@@ -14,3 +14,13 @@ At this stage, the pilot includes:
 - a first model-coded pilot output under `outputs/gles_mip/gles_mip_v1_coded.csv`
 - a review template and agreement outputs under `outputs/gles_mip/`
 - notebooks for inspection, sampling, and follow-up analysis
+
+## Useful commands
+
+To evaluate v2 model outputs against the v1 human-reviewed sample:
+
+```bash
+PYTHONPATH=src .venv/bin/python -m open_codebook.run_agreement \
+  studies/gles_mip_pilot/config_v2.yaml \
+  outputs/gles_mip/gles_mip_v2_on_v1_review_template.csv
+```
