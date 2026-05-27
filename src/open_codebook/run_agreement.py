@@ -23,6 +23,7 @@ def build_agreement_output_paths(
 def main() -> None:
     project_root = get_project_root()
     config_arg = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_CONFIG_PATH
+    review_arg = Path(sys.argv[2]) if len(sys.argv) > 2 else None
     config_path = resolve_project_path(project_root, config_arg)
     config = load_config(config_path)
 
@@ -33,6 +34,8 @@ def main() -> None:
         disagreement_path,
         metadata_path,
     ) = build_agreement_output_paths(output_dir, config["study_name"])
+    if review_arg is not None:
+        review_path = resolve_project_path(project_root, review_arg)
 
     artifacts = write_agreement_outputs(
         review_path=review_path,
@@ -43,6 +46,7 @@ def main() -> None:
         id_column=config["id_column"],
     )
 
+    print(f"Loaded review table from: {review_path}")
     print(f"Saved agreement summary to: {summary_path}")
     print(f"Saved disagreement rows to: {disagreement_path}")
     print(f"Saved agreement metadata to: {metadata_path}")
