@@ -1,6 +1,6 @@
 # OpenCodebook
 
-**OpenCodebook** is an early-stage open-source project for AI-assisted, codebook-driven coding of social science and humanities (SSH) text data.
+**OpenCodebook** is an independent academic research project exploring transparent and reproducible AI-assisted, codebook-driven coding of social science and humanities (SSH) text data. It is currently at an early stage of development.
 
 It is designed for settings where coding is not purely classificatory, but interpretive: subjective, sensitive, indirect, or partly implicit text that requires researcher judgment. Rather than treating LLMs as tools that replace interpretation, the project explores how open and local models can support coding in ways that keep uncertainty visible, invite researcher review, and make analytic decisions more transparent and reproducible.
 
