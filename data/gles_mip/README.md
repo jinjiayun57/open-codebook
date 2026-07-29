@@ -12,7 +12,9 @@ The source data for this pilot come from `GESIS` / `GLES`.
 
 This folder is intended to document how those files are used inside the OpenCodebook repository. Raw source files should remain unchanged after download. Derived working files belong in `interim/`.
 
-## Files
+**Raw GLES source data and respondent-level interim data are not distributed with this repository.** GESIS/GLES access category `A` permits use for academic research and teaching but does not permit redistributing the raw microdata to third parties, so `raw/` and `interim/` only contain `.gitkeep` placeholders in version control. Researchers who want to reproduce the pilot need to download the files themselves (see Data access below) and place them locally at the paths described here; they will remain untracked and local-only.
+
+## Files (obtained locally, not tracked in this repo)
 
 - `raw/ZA10101_v3-0-0_open-ended.csv`
   Original open-ended response file downloaded from GESIS/GLES.

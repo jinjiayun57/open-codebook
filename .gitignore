@@ -11,3 +11,10 @@ outputs/**/*.json
 !outputs/demos/
 !outputs/demos/coded_demo.csv
 !outputs/demos/run_metadata.json
+
+# Restricted GESIS/GLES source data (ZA10101, access category A).
+# Real files are kept locally only, never committed to this repo.
+data/gles_mip/raw/*
+data/gles_mip/interim/*
+!data/gles_mip/raw/.gitkeep
+!data/gles_mip/interim/.gitkeep

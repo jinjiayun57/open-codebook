@@ -206,7 +206,7 @@ The GLES MIP pilot now has a runnable study workflow plus a first completed mode
 - agreement outputs under `outputs/gles_mip/`; new study runs use study-name-prefixed filenames such as `gles_mip_v1_agreement_summary.csv` and `gles_mip_v2_agreement_summary.csv`
 - notebooks for data inspection, sampling, and follow-up analysis
 
-The raw GLES source files are present under `data/gles_mip/raw/`. The pilot sample used for the first study run is stored under `data/gles_mip/interim/`.
+Raw GLES source data and respondent-level interim data are not distributed with this repository. The `data/gles_mip/raw/` and `data/gles_mip/interim/` folders keep only placeholder files (`.gitkeep`) to preserve the expected structure; see `data/gles_mip/README.md` for provenance and how to obtain the source files directly from GESIS/GLES.
 
 ## Current limitations
 
